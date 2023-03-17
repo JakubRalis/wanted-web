@@ -1,0 +1,49 @@
+:root {
+    --black: rgb(29, 29, 29);
+    --white: rgb(245, 245, 245);
+    --light-grey: rgb(219, 219, 219);
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+}
+
+.hamburger-row {
+    padding: 1em;
+    background-color: var(--white);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hamburger {
+    display: block;
+}
+
+.hamburger-nav {
+    background-color: var(--white);
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
+.hamburger-nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.hamburger-nav > ul > li {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: .5em;
+    border-bottom: 1px solid var(--black);
+}
+
+.hamburger-nav > ul > li:last-child {
+    border-bottom: none;
+}
