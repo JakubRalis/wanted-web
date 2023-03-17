@@ -15,19 +15,12 @@ body {
 
 .hamburger-row {
     padding: 1em;
-    background-color: var(--white);
     display: flex;
     justify-content: flex-end;
 }
 
 .hamburger {
     display: block;
-}
-
-.hamburger-nav {
-    background-color: var(--white);
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
 }
 
 .hamburger-nav > ul {
@@ -41,7 +34,6 @@ body {
     font-size: 1.5rem;
     color: var(--black);
     padding: .5em;
-    border-bottom: 1px solid var(--black);
 }
 
 .hamburger-nav > ul > li:last-child {

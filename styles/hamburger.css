@@ -1,5 +1,7 @@
 :root {
     --black: rgb(41, 41, 41);
+    --white: rgb(245, 245, 245);
+    --light-grey: rgb(219, 219, 219);
 }
 
 .hamburger {
@@ -41,12 +43,13 @@
 
 .hamburger-nav {
     transform: scaleY(0);
-    transform-origin: top center;
+    transform-origin: top;
     transition: .15s ease-in-out;
     opacity: 0;
 }
 
 @media screen and (max-width: 640px) { 
+
     .hamburger.active span:nth-child(1) {
         transform: rotate(35deg);
         top: 12px;
