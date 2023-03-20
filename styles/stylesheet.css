@@ -36,10 +36,18 @@ a:not(.hamburger):hover {
     scale: 1.03;
 }
 
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .hamburger-row {
     padding: 1em;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end;;
 }
 
 .hamburger {
@@ -69,6 +77,9 @@ a:not(.hamburger):hover {
 
 main {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url(../media/skater-mobile.jpg);
     object-fit: cover;
     background-repeat: no-repeat;
