@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/stylesheet.css">
     <link rel="stylesheet" href="./styles/hamburger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="./js/hamburger.js"></script>
     <title>Home | WANTED</title>
 </head>
 <body>
     <main>
         <div class="hamburger-row">
+            <a class="icon-link">
+                <img class="cart" src="./media/cart.svg" alt="cart">
+                <p class="cart-indicator">0</p>
+            </a>
             <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
                 <span></span>
                 <span></span>
@@ -29,8 +36,21 @@
                 <li>
                     <a>Contact</a>
                 </li>
+                <li>
+                    <a class="icon-link">
+                        <img class="cart" src="./media/cart.svg" alt="cart">
+                    </a>
+                </li>
             </ul>
         </nav>
+        <img class="logo" src="./media/logo-original.png" alt="logo">
     </main>
+    <article class="newcollection">
+        <header>
+            <h1>Brand new collection</h1>
+            <p>We just released new comfortable hoodies and tees with minimalistic design. Don't forget to consider ordering some for yourself!</p>
+            <a>Order now &#8594</a>
+        </header>
+    </article>
 </body>
 </html>

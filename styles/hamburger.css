@@ -5,8 +5,8 @@
 }
 
 .hamburger {
-    --rotate-time: .15s;
-    --move-time: .1s;
+    --rotate-time: .1s;
+    --move-time: 66ms;
 }
 .hamburger {
     width: 40px;
@@ -17,7 +17,7 @@
 .hamburger span {
     position: absolute;
     height: 6px;
-    background: var(--black);
+    background: var(--white);
     border-radius: 3px;
     left: 0;
     width: 100%;
@@ -42,9 +42,9 @@
 }
 
 .hamburger-nav {
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: .15s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .1s ease-in-out;
     opacity: 0;
 }
 
@@ -69,7 +69,7 @@
                     transform var(--rotate-time) var(--move-time);
     }
     .hamburger-nav.active {
-        transform: scaleY(1);
+        transform: scaleX(1);
         opacity: 1;
     }
 }
