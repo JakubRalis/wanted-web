@@ -8,10 +8,12 @@
     --rotate-time: .1s;
     --move-time: 66ms;
 }
+
 .hamburger {
     width: 40px;
     height: 30px;
     position: relative;
+    display: inline-block;
 }
   
 .hamburger span {
