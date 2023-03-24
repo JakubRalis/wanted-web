@@ -55,7 +55,7 @@ nav {
     position: fixed;
     top: 1em;
     left: 1em;
-    height: 5vh;
+    height: 30px;
     transition: 200ms;
 }
 
