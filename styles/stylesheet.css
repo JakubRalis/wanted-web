@@ -20,7 +20,7 @@ p, h1 {
 
 body {
     margin: 0;
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
 .link {
