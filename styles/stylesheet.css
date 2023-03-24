@@ -100,12 +100,7 @@ nav {
 
 .hamburger-item .link {
     display: block;
-    text-shadow: 0 0 0.3em var(--white);
     transition: 200ms;
-}
-
-.hamburger-item .link:hover {
-    text-shadow: 0 0 0.4em var(--white);
 }
 
 main {
