@@ -44,8 +44,8 @@
 }
 
 .hamburger-nav {
-    transform: scaleX(0);
-    transform-origin: right;
+    transform: scaleY(0);
+    transform-origin: top;
     transition: .1s ease-in-out;
     opacity: 0;
 }
@@ -71,7 +71,7 @@
                     transform var(--rotate-time) var(--move-time);
     }
     .hamburger-nav.active {
-        transform: scaleX(1);
+        transform: scaleY(1);
         opacity: 1;
     }
 }
