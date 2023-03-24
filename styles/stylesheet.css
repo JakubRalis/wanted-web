@@ -126,16 +126,14 @@ main {
 }
 
 .main-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 0.3em;
-    text-shadow: 0 0 0.8em var(--white);
 }
 
 .main-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 85%;
     margin-bottom: 0.5em;
-    text-shadow: 0 0 0.3em var(--white);
 }
 
 .button-link {
@@ -145,8 +143,6 @@ main {
     padding: 0.1em 0.4em 0.1em 0.4em;
     border-radius: 0.3em;
     display: inline-block;
-    text-shadow: 0 0 0.05em var(--black);
-    box-shadow: 0 0 0.3em var(--white);
 }
 
 .button-link:hover {
