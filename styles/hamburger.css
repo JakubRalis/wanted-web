@@ -19,7 +19,7 @@
 .hamburger span {
     position: absolute;
     height: 6px;
-    background: var(--white);
+    background: var(--black);
     border-radius: 3px;
     left: 0;
     width: 100%;

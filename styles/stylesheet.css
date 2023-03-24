@@ -48,7 +48,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     padding: 1em;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .logo {
@@ -73,7 +73,7 @@ nav {
 }
 
 .cart {
-    filter: invert(98%);
+    filter: invert(2%);
 }
 
 .cart-indicator {
