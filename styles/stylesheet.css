@@ -55,7 +55,7 @@ nav {
     position: fixed;
     top: 1em;
     left: 1em;
-    height: 30px;
+    height: 35px;
     transition: 200ms;
 }
 
@@ -72,9 +72,6 @@ nav {
     position: relative;
 }
 
-.cart {
-    filter: invert(2%);
-}
 
 .cart-indicator {
     position: absolute;
