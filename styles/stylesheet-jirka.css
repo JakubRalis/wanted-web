@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Roboto Mono";
+    src: url(../fonts/RobotoMono/RobotoMono-Regular.ttf);
+}
+
 footer{
-    font-family: monospace;
+    font-family: Roboto Mono, monospace;
 }
 
 /*Subscribe------*/
@@ -16,10 +21,11 @@ footer{
 }
 
 input[type=footer-text], select, textarea {
+    font-family: Roboto Mono, monospace;
     width: 43%;
     color: red;
     background-color: black;
-    padding: 0.5em;
+    padding: 0.4em;
     border: 1px solid red;
     box-sizing: border-box;
     margin-top: 0.5em;
@@ -28,27 +34,28 @@ input[type=footer-text], select, textarea {
 }
 
 input[type=submit] {
+    font-family: Roboto Mono, monospace;
     background-color: black;
     color: red;
     padding: 0.4em 1.3em;
     border-radius: 0.3em;
     border: 1px solid red;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
 
 /*Dolní footer-------*/
 .footer-end{
+    font-family: Roboto Mono, monospace;
     color: var(--black);
-    font-family: monospace;
     border-top: 1px solid var(--black);
     text-align: center;
 }
 
 .footer-item{
-    font-size: 14px;
+    font-size: 12px;
     padding: 0.2em 0em;
 }
 
@@ -62,7 +69,7 @@ input[type=submit] {
 
 
 .footer-item-title{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .footer-item-title::after{
