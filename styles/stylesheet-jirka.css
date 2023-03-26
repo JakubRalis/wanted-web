@@ -1,12 +1,38 @@
 footer{
     font-family: monospace;
 }
+
+/*Subscribe------*/
 .footer-subscribe{
     background-color: black;
     color: var(--white);
     text-align: center;
     padding: 1.5em;
 }
+
+input[type=footer-text], select, textarea {
+    width: 40%;
+    padding: 0.5em;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    text-align: left;
+}
+
+input[type=submit] {
+    background-color: var(--white);
+    color: red;
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+    border: 1px solid red;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+
+/*Dolní footer-------*/
 .footer-end{
     color: var(--black);
     font-family: monospace;
@@ -40,6 +66,10 @@ footer{
     margin-right: auto;
 }
 
+.footer-sections{
+    list-style-type: none;
+}
+
 .footer-collection{
     list-style-type: none;
     padding: 0 0 0 0.5em;
@@ -52,24 +82,20 @@ footer{
 
 .footer-item-subscribe-title{
     font-size: 18px;
+    color: red;
 }
 
-input[type=text], select, textarea {
-    width: 40%;
-    padding: 0.5em;
-    border: 1px solid #EB6C27;
-    box-sizing: border-box;
-    margin-top: 0.5em;
-    margin-bottom: 0.8em;
-    text-align: left;
-}
 
-input[type=submit] {
-    background-color: var(--white);
-    color: black;
-    padding: 0.5em 1.5em;
-    border: none;
-    cursor: pointer;
-    font-size: 12px;
-}
+/*Změna velikostí - hlavně pro dolní footer*/
 
+@media screen and (min-width: 960px) {
+    .footer-sections {
+    }
+    
+    .footer-sections-item{
+        display:inline-block;
+        vertical-align: top;
+        margin: 0em 3em;
+    }
+    
+}
