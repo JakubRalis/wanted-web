@@ -10,8 +10,15 @@ footer{
     padding: 1.5em 0em;
 }
 
+.footer-item-subscribe-title{
+    font-size: 20px;
+    color: red;
+}
+
 input[type=footer-text], select, textarea {
-    width: 40%;
+    width: 43%;
+    color: red;
+    background-color: black;
     padding: 0.5em;
     border: 1px solid red;
     box-sizing: border-box;
@@ -21,13 +28,13 @@ input[type=footer-text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: var(--white);
+    background-color: black;
     color: red;
-    padding: 0.5em 1.5em;
+    padding: 0.4em 1.3em;
     border-radius: 0.3em;
     border: 1px solid red;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -84,11 +91,6 @@ input[type=submit] {
 .footer-collection-link{
     text-decoration: none;
     color: var(--black);
-}
-
-.footer-item-subscribe-title{
-    font-size: 18px;
-    color: red;
 }
 
 
