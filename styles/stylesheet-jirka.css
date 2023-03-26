@@ -1,8 +1,19 @@
 footer{
+    font-family: monospace;
+}
+.footer-subscribe{
+    background-color: black;
+    color: var(--white);
+    text-align: center;
+    padding: 1.5em;
+}
+.footer-end{
     color: var(--black);
     font-family: monospace;
     border-top: 1px solid var(--black);
+    text-align: center;
 }
+
 .footer-item{
     font-size: 14px;
     padding: 0.2em 0 0.2em 0.5em;
@@ -21,10 +32,12 @@ footer{
     position: relative;
     content: "";
     display: block;
-    width: 160px;
-    height: 2px;
+    width: 140px;
+    height: 1px;
     background-color: black;
-    margin: 10px 0;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-collection{
@@ -36,3 +49,27 @@ footer{
     text-decoration: none;
     color: var(--black);
 }
+
+.footer-item-subscribe-title{
+    font-size: 18px;
+}
+
+input[type=text], select, textarea {
+    width: 30%;
+    padding: 0.8em;
+    border: 1px solid #EB6C27;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    text-align: left;
+}
+
+input[type=submit] {
+    background-color: var(--white);
+    color: black;
+    padding: 0.5em 1.5em;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
