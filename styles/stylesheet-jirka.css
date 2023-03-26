@@ -7,7 +7,7 @@ footer{
     background-color: black;
     color: var(--white);
     text-align: center;
-    padding: 1.5em;
+    padding: 1.5em 0em;
 }
 
 input[type=footer-text], select, textarea {
@@ -42,7 +42,7 @@ input[type=submit] {
 
 .footer-item{
     font-size: 14px;
-    padding: 0.2em 0 0.2em 0.5em;
+    padding: 0.2em 0em;
 }
 
 .footer-item:first-child{
@@ -68,11 +68,12 @@ input[type=submit] {
 
 .footer-sections{
     list-style-type: none;
+    padding-left: 0;
 }
 
 .footer-collection{
     list-style-type: none;
-    padding: 0 0 0 0.5em;
+    padding: 0 0 0 0;
 }
 
 .footer-collection-link{
@@ -95,7 +96,7 @@ input[type=submit] {
     .footer-sections-item{
         display:inline-block;
         vertical-align: top;
-        margin: 0em 3em;
+        margin: 0em;
     }
     
 }
