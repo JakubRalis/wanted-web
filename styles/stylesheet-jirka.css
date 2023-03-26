@@ -46,7 +46,11 @@ input[type=submit] {
 }
 
 .footer-item:first-child{
-    padding-top: 2em;
+    padding-top: 2.5em;
+}
+
+.footer-item:last-child{
+    padding-bottom: 2.5em;
 }
 
 
@@ -96,7 +100,6 @@ input[type=submit] {
     .footer-sections-item{
         display:inline-block;
         vertical-align: top;
-        margin: 0em;
+        width: 30%;
     }
-    
 }
