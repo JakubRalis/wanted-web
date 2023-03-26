@@ -55,8 +55,8 @@ footer{
 }
 
 input[type=text], select, textarea {
-    width: 30%;
-    padding: 0.8em;
+    width: 40%;
+    padding: 0.5em;
     border: 1px solid #EB6C27;
     box-sizing: border-box;
     margin-top: 0.5em;
