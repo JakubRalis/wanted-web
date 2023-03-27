@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: "a";
-    src: url(../fonts/SedgwickAveDisplay-Regular.ttf);
+    font-family: "Roboto Mono";
+    src: url(../fonts/RobotoMono/RobotoMono-Regular.ttf);
 }
 
 html {
@@ -77,8 +77,8 @@ nav {
 
 .cart-indicator {
     position: absolute;
-    color: var(--black);
-    background-color: pink;
+    color: var(--white);
+    background-color: red;
     top: -0.5em;
     right: 1em;
     font-size: 0.8rem;
@@ -192,20 +192,70 @@ main {
     transform: translateX(0.1em);
 }
 
-.products {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    flex-shrink: 1;
+.products-box-link {
     color: black;
 }
 
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.products-header {
+    font-family: Roboto Mono, monospace;
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 2em;
+}
+
+.products-title::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 140px;
+    height: 1px;
+    background-color: red;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .products-box {
-    border: 1px solid black;
-    margin: 1em;
+    max-width: 450px;
+    display: inline-block;
+    margin: 2px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.products-price, .products-price-red {
+    display: inline;
+}
+
+.products-price-red {
+    color: red;
+}
+
+.sale .products-price {
+    text-decoration: line-through;
 }
 
 .products-photo {
-    height: 70%;
+    max-width: 100%;
+}
+
+.products-text {
+    padding: 1em 1em 0 1em;
+}
+
+.products-footer {
+    padding: 0 1em 1em 1em;
+}
+
+.products-name {
+    font-size: 1.5rem;
 }
