@@ -192,6 +192,20 @@ main {
     transform: translateX(0.1em);
 }
 
-.randomobrazek {
+.products {
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: black;
+}
+
+.products-box {
+    border: 1px solid black;
+    margin: 1em;
+}
+
+.products-photo {
+    height: 70%;
 }
