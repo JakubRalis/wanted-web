@@ -20,7 +20,7 @@ footer{
     color: red;
 }
 
-input[type=footer-text], select, textarea {
+input[type=text], select, textarea {
     font-family: Roboto Mono, monospace;
     width: 43%;
     color: red;
