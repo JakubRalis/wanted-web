@@ -197,8 +197,9 @@ main {
 .products-header {
     font-family: Roboto Mono, monospace;
     color: black;
-    padding: 2em 1.1em 1.625em 0.9em;
-    margin-bottom: 5px;
+    padding-top: 2.5em;
+    padding-bottom: 0.8em;
+    padding-left: 1%;
 }
 
 .products-title{
@@ -282,17 +283,5 @@ main {
 
     .products-box {
         max-width: 48vw;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .products-header {
-        padding: 2em 1.1em 1.625em 0.4em;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .products-header {
-        padding: 2em 1.1em 1.625em 1.2em;
     }
 }
