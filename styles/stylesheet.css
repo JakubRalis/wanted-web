@@ -193,9 +193,7 @@ main {
 
 .products-header {
     font-family: Roboto Mono, monospace;
-    background-color: black;
-    color: red;
-    text-align: center;
+    color: black;
     padding: 2em;
     margin-bottom: 5px;
 }
@@ -204,13 +202,11 @@ main {
     position: relative;
     content: "";
     display: block;
-    width: 140px;
+    width: 308px;
     height: 1px;
-    background-color: red;
+    background-color: black;
     margin-top: 3px;
     margin-bottom: 4px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .products-box {
