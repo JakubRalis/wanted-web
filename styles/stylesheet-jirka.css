@@ -1,3 +1,10 @@
+:root {
+    --black: rgb(29, 29, 29);
+    --white: rgb(245, 245, 245);
+    --white-transparent: rgba(245, 245, 245, 0.8);
+    --lightGrey: rgb(219, 219, 219);
+}
+
 @font-face {
     font-family: "Roboto Mono";
     src: url(../fonts/RobotoMono/RobotoMono-Regular.ttf);
@@ -5,7 +12,6 @@
 
 footer{
     font-family: Roboto Mono, monospace;
-    margin-top: 5px;
 }
 
 /*Subscribe------*/
@@ -100,7 +106,24 @@ input[type=submit] {
     text-decoration: none;
     color: var(--black);
 }
+/*Copyright*/
+.copyright{
+    color: grey;
+    font-size: 10px;
+}
 
+.copyright::before{
+    position: relative;
+    content: "";
+    display: block;
+    width: 140px;
+    height: 1px;
+    background-color: rgb(167, 166, 166);
+}
+
+.copyright-list{
+    list-style-type: none;
+}
 
 /*Změna velikostí - hlavně pro dolní footer*/
 
