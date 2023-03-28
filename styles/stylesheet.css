@@ -24,6 +24,7 @@ body {
     background-color: var(--white);
 }
 
+/*Navbar------------------------------------*/
 .link {
     transition: 200ms ease-in-out;
 }
@@ -140,7 +141,7 @@ nav {
         height: 45px;
     }
 }
-
+/*Main------------------------------------*/
 main {
     height: 100vh;
     background-image: url(../media/skater-2560px.jpg);
@@ -180,6 +181,7 @@ main {
     transform: translateX(0.1em);
 }
 
+/*Produkty------------------------------------*/
 .products-box-link {
     color: black;
 }
@@ -267,6 +269,8 @@ main {
 .products-name {
     font-size: 1.05rem;
 }
+
+/*------------------------------------*/
 
 @media screen and (max-width: 1245px) {
     main {
