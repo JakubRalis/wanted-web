@@ -184,6 +184,7 @@ main {
     color: black;
 }
 
+
 .products {
     display: flex;
     justify-content: center;
@@ -194,15 +195,18 @@ main {
 .products-header {
     font-family: Roboto Mono, monospace;
     color: black;
-    padding: 2em;
+    padding: 2em 1em;
     margin-bottom: 5px;
+}
+.products-title{
+    font-size: 1.3rem;
 }
 
 .products-title::after {
     position: relative;
     content: "";
     display: block;
-    width: 308px;
+    width: 220px;
     height: 1px;
     background-color: black;
     margin-top: 3px;
@@ -231,6 +235,9 @@ main {
 .products-box:hover .products-photo:last-of-type {
     display: initial;
 }
+.products-price{
+    font-size: 0.8rem;
+}
 
 .products-price, .products-price-red {
     display: inline;
@@ -238,6 +245,7 @@ main {
 
 .products-price-red {
     color: red;
+    font-size: 0.8rem;
 }
 
 .sale .products-price {
@@ -257,7 +265,7 @@ main {
 }
 
 .products-name {
-    font-size: 1.5rem;
+    font-size: 1.05rem;
 }
 
 @media screen and (max-width: 1245px) {
