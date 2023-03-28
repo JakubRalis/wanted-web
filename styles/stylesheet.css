@@ -186,33 +186,23 @@ main {
     color: black;
 }
 
-
 .products {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     color: black;
+    width: 100%;
 }
 
 .products-header {
     font-family: Roboto Mono, monospace;
     color: black;
-    padding: 2em 1em;
+    padding: 2em 1.1em 1.625em 0.9em;
     margin-bottom: 5px;
 }
+
 .products-title{
     font-size: 1.3rem;
-}
-
-.products-title::after {
-    position: relative;
-    content: "";
-    display: block;
-    width: 220px;
-    height: 1px;
-    background-color: black;
-    margin-top: 3px;
-    margin-bottom: 4px;
 }
 
 .products-box {
@@ -276,6 +266,7 @@ main {
     main {
         background-image: url(../media/skater-1245px.jpg);
     }
+
 }
 
 @media screen and (max-width: 960px) {
@@ -291,5 +282,17 @@ main {
 
     .products-box {
         max-width: 48vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .products-header {
+        padding: 2em 1.1em 1.625em 0.45em;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .products-header {
+        padding: 2em 1.1em 1.625em 1.1em;
     }
 }
