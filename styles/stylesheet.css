@@ -197,6 +197,7 @@ main {
     color: red;
     text-align: center;
     padding: 2em;
+    margin-bottom: 5px;
 }
 
 .products-title::after {
@@ -218,6 +219,9 @@ main {
     margin: 2px;
     flex-grow: 1;
     flex-shrink: 0;
+    transition: 200ms ease;
+    background-color: white;
+    border: 1px solid var(--lightGrey);
 }
 
 .products-price, .products-price-red {
