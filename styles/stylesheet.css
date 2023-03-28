@@ -287,12 +287,12 @@ main {
 
 @media screen and (max-width: 1024px) {
     .products-header {
-        padding: 2em 1.1em 1.625em 0.45em;
+        padding: 2em 1.1em 1.625em 0.4em;
     }
 }
 
 @media screen and (min-width: 1300px) {
     .products-header {
-        padding: 2em 1.1em 1.625em 1.1em;
+        padding: 2em 1.1em 1.625em 1.2em;
     }
 }
