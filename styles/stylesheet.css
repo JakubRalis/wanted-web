@@ -151,18 +151,6 @@ main {
     justify-content: flex-end;
 }
 
-@media screen and (max-width: 1245px) {
-    main {
-        background-image: url(../media/skater-1245px.jpg);
-    }
-}
-
-@media screen and (max-width: 750px) {
-    main {
-        background-image: url(../media/skater-750px.jpg);
-    }
-}
-
 .main-text {
     padding: 1em;
     max-width: 500px;
@@ -225,7 +213,7 @@ main {
 }
 
 .products-box {
-    max-width: 450px;
+    max-width: 24vw;
     display: inline-block;
     margin: 2px;
     flex-grow: 1;
@@ -258,4 +246,26 @@ main {
 
 .products-name {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1245px) {
+    main {
+        background-image: url(../media/skater-1245px.jpg);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .products-box {
+        max-width: 32vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        background-image: url(../media/skater-750px.jpg);
+    }
+
+    .products-box {
+        max-width: 48vw;
+    }
 }
