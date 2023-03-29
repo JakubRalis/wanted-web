@@ -24,6 +24,7 @@ body {
     background-color: var(--white);
 }
 
+/*Navbar------------------------------------*/
 .link {
     transition: 200ms ease-in-out;
 }
@@ -140,7 +141,7 @@ nav {
         height: 45px;
     }
 }
-
+/*Main------------------------------------*/
 main {
     height: 100vh;
     background-image: url(../media/skater-2560px.jpg);
@@ -180,6 +181,7 @@ main {
     transform: translateX(0.1em);
 }
 
+/*Produkty------------------------------------*/
 .products-box-link {
     color: black;
 }
@@ -189,28 +191,19 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     color: black;
+    width: 100%;
 }
 
 .products-header {
     font-family: Roboto Mono, monospace;
-    background-color: black;
-    color: red;
-    text-align: center;
-    padding: 2em;
-    margin-bottom: 5px;
+    color: black;
+    padding-top: 2.5em;
+    padding-bottom: 0.8em;
+    padding-left: 1%;
 }
 
-.products-title::after {
-    position: relative;
-    content: "";
-    display: block;
-    width: 140px;
-    height: 1px;
-    background-color: red;
-    margin-top: 3px;
-    margin-bottom: 4px;
-    margin-left: auto;
-    margin-right: auto;
+.products-title{
+    font-size: 1.3rem;
 }
 
 .products-box {
@@ -235,6 +228,9 @@ main {
 .products-box:hover .products-photo:last-of-type {
     display: initial;
 }
+.products-price{
+    font-size: 0.8rem;
+}
 
 .products-price, .products-price-red {
     display: inline;
@@ -242,6 +238,7 @@ main {
 
 .products-price-red {
     color: red;
+    font-size: 0.8rem;
 }
 
 .sale .products-price {
@@ -261,13 +258,16 @@ main {
 }
 
 .products-name {
-    font-size: 1.5rem;
+    font-size: 1.05rem;
 }
+
+/*------------------------------------*/
 
 @media screen and (max-width: 1245px) {
     main {
         background-image: url(../media/skater-1245px.jpg);
     }
+
 }
 
 @media screen and (max-width: 960px) {

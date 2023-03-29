@@ -125,6 +125,7 @@ input[type=submit] {
 
 .copyright-list{
     list-style-type: none;
+    padding-left: 5%;
 }
 
 /*Změna velikostí - hlavně pro dolní footer*/
@@ -135,5 +136,19 @@ input[type=submit] {
         display:inline-block;
         vertical-align: top;
         width: 30%;
+    }
+    
+    .copyright::before{
+        width: 96vw;
+    }
+
+    .copyright-list{
+        padding-left: 3%;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .copyright-list{
+        padding-left: 2%;
     }
 }
