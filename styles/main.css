@@ -2,6 +2,7 @@
     --black: rgb(29, 29, 29);
     --white: rgb(245, 245, 245);
     --white-transparent: rgba(245, 245, 245, 0.8);
+    --white-transparent2: rgba(245, 245, 245, 0.9);
     --lightGrey: rgb(219, 219, 219);
 }
 
@@ -31,10 +32,6 @@ body {
 
 .link:hover {
     cursor: pointer;
-}
-
-.link:not(.hamburger):not(.button-link):not(.logo-link):hover{
-    scale: 1.03;
 }
 
 nav {
@@ -75,6 +72,13 @@ nav {
     position: relative;
 }
 
+.cart {
+    transition: 200ms ease;
+}
+
+.cart:hover {
+    opacity: 0.7;
+}
 
 .cart-indicator {
     position: absolute;
@@ -93,7 +97,6 @@ nav {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: var(--white-transparent);
 }
 
 .hamburger-item {
@@ -101,6 +104,11 @@ nav {
     color: black;
     padding: .5em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: var(--white-transparent);
+}
+
+.hamburger-item:hover {
+    background-color: var(--white-transparent2);
 }
 
 .hamburger-item.products {
@@ -118,6 +126,10 @@ nav {
     text-decoration: none;
 }
 
+.dropdown-content {
+    display: none;
+}
+
 @media screen and (min-width: 960px) {
     .hamburger-nav {
         display: flex;
@@ -126,6 +138,13 @@ nav {
     .hamburger-item {
         border-bottom: none;
         padding: 1em;
+        background-color: transparent;
+    }
+    .hamburger-item:hover {
+        background-color: transparent;
+    }
+    .hamburger-item .link:not(.dropdown-link):hover {
+        opacity: 0.7;
     }
     .hamburger-item:first-child {
         border-top: none;
@@ -143,6 +162,46 @@ nav {
     }
     .logo {
         height: 45px;
+    }
+
+    .hamburger-item.hoodies, .hamburger-item.tshirts, .hamburger-item.pants {
+        display: none;
+    }
+
+    .hamburger-item.products {
+        display: initial;
+    }
+
+    .dropdown-content {
+        display: block;
+        transform: scaleY(0);
+        opacity: 0;
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin-top: 100px;
+        transition: .1s ease-in-out;
+        transform-origin: top;
+    }
+
+    .dropdown-link {
+        padding: .5em 1em .5em 1em;
+        background-color: var(--white-transparent);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-top: none;
+    }
+
+    .dropdown-link:hover {
+        background-color: var(--white-transparent2);
+    }
+
+    .dropdown-item:first-child .dropdown-link {
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    nav:has(.products-dropdown:hover) + .dropdown-content {
+        transform: scaleY(1);
+        opacity: 1;
     }
 }
 /*Main------------------------------------*/
