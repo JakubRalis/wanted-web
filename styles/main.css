@@ -174,7 +174,6 @@ nav {
 
     .dropdown-content {
         display: block;
-        width: 100%;
         color: black;
         transform: scaleY(0);
         opacity: 0;
@@ -185,8 +184,10 @@ nav {
         transition: .1s .5s ease-in-out;
         transform-origin: top;
         font-size: 20px;
-        position: absolute;
+        position: fixed;
         top: 79px;
+        right: 0;
+        width: 25%;
     }
 
     .dropdown-link {
