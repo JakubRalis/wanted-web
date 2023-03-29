@@ -91,7 +91,7 @@ nav {
 .hamburger-nav {
     list-style-type: none;
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 0;
     text-align: center;
     background-color: var(--white-transparent);
 }
@@ -101,6 +101,10 @@ nav {
     color: black;
     padding: .5em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.hamburger-item.products {
+    display: none;
 }
 
 .hamburger-item:first-child {
@@ -261,7 +265,150 @@ main {
     font-size: 1.05rem;
 }
 
-/*------------------------------------*/
+/*Footer------*/
+
+footer{
+    font-family: Roboto Mono, monospace;
+}
+
+/*Subscribe------*/
+.footer-subscribe{
+    background-color: black;
+    color: var(--white);
+    text-align: center;
+    padding: 1.5em 0em;
+}
+
+.footer-item-subscribe-title{
+    font-size: 20px;
+    color: red;
+}
+
+input[type=text], select, textarea {
+    font-family: Roboto Mono, monospace;
+    width: 43%;
+    color: red;
+    background-color: black;
+    padding: 0.4em;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    text-align: left;
+}
+
+input[type=submit] {
+    font-family: Roboto Mono, monospace;
+    background-color: black;
+    color: red;
+    padding: 0.4em 1.3em;
+    border-radius: 0.3em;
+    border: 1px solid red;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+
+/*Dolní footer-------*/
+.footer-end{
+    font-family: Roboto Mono, monospace;
+    color: var(--black);
+    border-top: 1px solid var(--black);
+    text-align: center;
+}
+
+.footer-item{
+    font-size: 12px;
+    padding: 0.2em 0em;
+}
+
+.footer-item:first-child{
+    padding-top: 2.5em;
+}
+
+.footer-item:last-child{
+    padding-bottom: 2.5em;
+}
+
+
+.footer-item-title{
+    font-size: 14px;
+}
+
+.footer-item-title::after{
+    position: relative;
+    content: "";
+    display: block;
+    width: 140px;
+    height: 1px;
+    background-color: red;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-sections{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-collection{
+    list-style-type: none;
+    padding: 0 0 0 0;
+}
+
+.footer-collection-link{
+    text-decoration: none;
+    color: var(--black);
+}
+/*Copyright*/
+.copyright{
+    color: grey;
+    font-size: 10px;
+}
+
+.copyright::before{
+    position: relative;
+    content: "";
+    display: block;
+    width: 93vw;
+    height: 1px;
+    background-color: rgb(167, 166, 166);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright-list{
+    list-style-type: none;
+    padding-left: 5%;
+}
+
+/*Změna velikostí - hlavně pro dolní footer*/
+
+@media screen and (min-width: 960px) {
+    
+    .footer-sections-item{
+        display:inline-block;
+        vertical-align: top;
+        width: 30%;
+    }
+    
+    .copyright::before{
+        width: 96vw;
+    }
+
+    .copyright-list{
+        padding-left: 3%;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .copyright-list{
+        padding-left: 2%;
+    }
+}
 
 @media screen and (max-width: 1245px) {
     main {
