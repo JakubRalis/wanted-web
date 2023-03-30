@@ -4,6 +4,7 @@
     --white-transparent: rgba(245, 245, 245, 0.8);
     --white-transparent2: rgba(245, 245, 245, 0.9);
     --lightGrey: rgb(219, 219, 219);
+    --lightGrey-transparent: rgba(219, 219, 219, 0.8);
 }
 
 @font-face {
@@ -108,7 +109,7 @@ nav {
 }
 
 .hamburger-item:hover {
-    background-color: var(--white-transparent2);
+    background-color: var(--lightGrey-transparent);
 }
 
 .hamburger-item.products {
@@ -169,7 +170,16 @@ nav {
     }
 
     .hamburger-item.products {
-        display: initial;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    .hamburger-item.products::after {
+        content: "+";
+        position: absolute;
+        right: 0.3em;
+        font-size: 1.2em;
     }
 
     .dropdown-content {
@@ -186,8 +196,7 @@ nav {
         font-size: 20px;
         position: fixed;
         top: 79px;
-        right: 0;
-        width: 25%;
+        width: 100%;
     }
 
     .dropdown-link {
@@ -196,10 +205,12 @@ nav {
         border: 1px solid rgba(0, 0, 0, 0.5);
         border-top: none;
         display: block;
+        text-decoration: none;
+        color: inherit;
     }
 
     .dropdown-link:hover {
-        background-color: var(--white-transparent2);
+        background-color: var(--lightGrey-transparent);
     }
 
     .dropdown-item:first-child .dropdown-link {
@@ -213,7 +224,7 @@ nav {
     }
 }
 /*Main------------------------------------*/
-main {
+.main-home {
     height: 100vh;
     background-image: url(../media/skater-2560px.jpg);
     object-fit: cover;
@@ -336,6 +347,7 @@ main {
 
 footer{
     font-family: Roboto Mono, monospace;
+    margin-top: 20px;
 }
 
 /*Subscribe------*/
@@ -478,7 +490,7 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 1245px) {
-    main {
+    .main-home {
         background-image: url(../media/skater-1245px.jpg);
     }
 
@@ -491,7 +503,7 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 750px) {
-    main {
+    .main-home {
         background-image: url(../media/skater-750px.jpg);
     }
 
