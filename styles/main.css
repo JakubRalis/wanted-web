@@ -303,13 +303,14 @@ nav {
     display: none;
 }
 
-.products-box:hover .products-photo:first-of-type {
+.products-box:hover .products-photo:first-of-type, .products-box:active .products-photo:first-of-type {
     display: none;
 }
 
-.products-box:hover .products-photo:last-of-type {
+.products-box:hover .products-photo:last-of-type, .products-box:active .products-photo:last-of-type {
     display: initial;
 }
+
 .products-price{
     font-size: 0.8rem;
 }
