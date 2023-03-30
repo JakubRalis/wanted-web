@@ -1,3 +1,17 @@
 .main-products {
     margin-top: 79px;
 }
+
+.products-filter {
+    width: 100%;
+    padding: 1em;
+}
+
+.filterlist {
+    list-style-type: none;
+    margin: 0;
+}
+
+.filterlist-item {
+    display: inline-block;
+}
