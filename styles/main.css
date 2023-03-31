@@ -251,7 +251,9 @@ nav {
 }
 
 .button-link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
     background-color: var(--white);
     color: var(--black);
     padding: 0.1em 0.6em 0.1em 0.6em;

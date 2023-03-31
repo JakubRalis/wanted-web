@@ -7,16 +7,6 @@
     --lightGrey-transparent: rgba(219, 219, 219, 0.8);
 }
 
-@font-face {
-    font-family: "Roboto Mono";
-    src: url(../fonts/RobotoMono/RobotoMono-Regular.ttf);
-}
-
-html {
-    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--white);
-}
-
 p, h1 {
     margin: 0;
 }
