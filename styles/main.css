@@ -303,22 +303,12 @@ nav {
     display: none;
 }
 
-.products-box:hover .front, .products-box:active .front{
+.products-box-link:hover .front, .products-box-link:active .front{
     display: none;
 }
 
-.products-box:hover .back, .products-box:active .back{
+.products-box-link:hover .back, .products-box-link:active .back{
     display: initial;
-}
-
-@media screen and (max-width: 960px) {
-    .back:hover + .front, .front:hover {
-        display: none;
-    }
-
-    .front:hover + .back, .back:hover {
-        display: initial;
-    }
 }
 
 .products-price{
