@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="../js/hamburger.js"></script>
+    <script src="../js/sizes.js"></script>
     <title>Home | WANTED</title>
 </head>
 <body>
@@ -72,7 +73,27 @@
         <div class="product-panel">
             <h1 class="product-title">Hoodie Black</h1>
             <p class="product-price">$XXX.XX</p>
-            <a href="#" class="button addtocart-btn">ADD TO CART &#8594;</a>
+            <ul class="product-sizes">
+                <li onClick="changeClassS()" id="sizeBtnS" class="sizes-item unavailable">
+                    <a class="link sizes-link">S</a>
+                </li>
+                <li onClick="changeClassM()"  id="sizeBtnM" class="sizes-item">
+                    <a class="link sizes-link">M</a>
+                </li>
+                <li onClick="changeClassL()"  id="sizeBtnL" class="sizes-item">
+                    <a class="link sizes-link">L</a>
+                </li>
+                <li onClick="changeClassXL()"  id="sizeBtnXL" class="sizes-item">
+                    <a class="link sizes-link">XL</a>
+                </li>
+                <li onClick="changeClassXXL()"  id="sizeBtnXXL" class="sizes-item unavailable">
+                    <a class="link sizes-link">XXL</a>
+                </li>
+            </ul>
+            <div class="product-sizetable">
+                <a class="link sizetable-link">Size Guide</a>
+            </div>
+            <a href="#" class="button addtocart-btn">ADD TO CART</a>
             <ul class="product-description">
                 <li class="description-item">85% cotton, 15% polymer</li>
                 <li class="description-item">Baggy fit</li>
