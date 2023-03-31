@@ -32,15 +32,35 @@ body {
 }
 
 .product-photos {
-    width: 70%;
-}
-
-.product-panel {
-    width: 30%;
-    color: black;
-    padding: 0;
+    max-width: 70%;
 }
 
 .photo {
     max-width: 49.8%;
+}
+
+.product-panel {
+    color: black;
+    padding: 2em;
+}
+
+.product-price {
+    font-size: 1.2rem;
+}
+
+.addtocart-btn {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    color: var(--white);
+    background-color: black;
+    font-weight: normal;
+    text-decoration: none;
+    transition: 200ms ease;
+}
+
+.addtocart-btn:hover {
+    transform: translateX(0.1em);
 }
