@@ -23,12 +23,14 @@ body {
 
 .product-photos {
     display: flex;
-    max-width: 70%;
     flex-wrap: wrap;
+    max-width: 70%;
+    margin: 0;
+    padding: 0;
 }
 
 .photo {
-    max-width: 49.8%;
+    width: 100%;
 }
 
 .product-panel {
@@ -161,5 +163,14 @@ body {
     .addtocart-btn {
         display: block;
         text-align: center;
+    }
+    .product-photos {
+        display: block;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    .photos-item {
+        display: inline;
     }
 }
