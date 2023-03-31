@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/hamburger.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/hamburger.css">
+    <link rel="stylesheet" href="../styles/product-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <script src="./js/hamburger.js"></script>
+    <script src="../js/hamburger.js"></script>
     <title>Home | WANTED</title>
 </head>
 <body>
     <nav>
-        <a class="link logo-link" href="./index.html">
-            <img class="logo" src="./media/MAIN_LOGO_obrazek_small.png" alt="logo">
+        <a class="link logo-link" href="../index.html">
+            <img class="logo" src="../media/MAIN_LOGO_obrazek_small.png" alt="logo">
         </a>
         <div class="nav-icons">
                 <a class="link icon-link">
-                    <img class="icon cart" src="./media/cart.svg" alt="cart">
+                    <img class="icon cart" src="../media/cart.svg" alt="cart">
                     <p class="cart-indicator">0</p>
                 </a>
                 <a href="javascript:void(0)" class="link hamburger hamburger-btn hamburger-zone">
@@ -30,7 +31,7 @@
         </div>
         <ul class="hamburger-nav hamburger-zone">
             <li class="hamburger-item hoodies">
-                <a class="link" href="./hoodies.html">Hoodies</a>
+                <a class="link" href="../hoodies.html">Hoodies</a>
             </li>
             <li class="hamburger-item tshirts">
                 <a class="link">T-Shirts</a>
@@ -51,7 +52,7 @@
     </nav>
     <ul class="dropdown-content">
         <li class="dropdown-item hoodies">
-            <a class="link dropdown-link" href="./hoodies.html">Hoodies</a>
+            <a class="link dropdown-link" href="../hoodies.html">Hoodies</a>
         </li>
         <li class="dropdown-item tshirts">
             <a class="link dropdown-link">T-Shirts</a>
@@ -60,4 +61,78 @@
             <a class="link dropdown-link">Pants</a>
         </li>
     </ul>
+    <main class="main-product">
+        <div class="product-photos">
+            <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
+            <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
+            <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
+            <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
+            <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
+        </div>
+        <div class="product-panel">
+            <h1 class="product-title">Hoodie Black</h1>
+            <p class="product-price">$XXX.XX</p>
+            <a class="button addtocart-btn">ADD TO CART</a>
+            <ul class="product-description">
+                <li class="description-item">85% cotton, 15% polymer</li>
+                <li class="description-item">Baggy fit</li>
+                <li class="description-item">ASDASD</li>
+                <li class="description-item">FGHFGH</li>
+                <li class="description-item">JKLJKL</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-subscribe">
+            <p class="footer-item-subscribe-title">STAY IN THE KNOW</p>
+            <div class="footer-formular">
+                <form action="action_page.php">
+                    <label class="footer-forular-item" for="email"></label>
+                    <input type="text" id="email" value placeholder="E-mail address" name="email">
+                    <div class="footer-button__formular">
+                        <input type="submit" value="Subscribe &#8594;">
+                    </div>
+                  </form>
+            </div>
+        </div>
+        <div class="footer-end">
+            <ul class="footer-sections">
+                <li class="footer-sections-item">
+                    <div class="footer-item contacts">
+                    <p class="footer-item-title">About Us</p>
+                    <ul class="footer-collection">
+                        <li><a class="footer-collection-link" href="tel:">+420 000 111 222</a></li>
+                        <li><a class="footer-collection-link" href="mailto:">info-bagladas@tvojemama.com</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="footer-sections-item">
+                    <div class="footer-item help">
+                        <p class="footer-item-title">Can We Help U?</p>
+                        <ul class="footer-collection">
+                            <li><a class="footer-collection-link" href="#">Help</a></li>
+                            <li><a class="footer-collection-link" href="#">Transport and Return</a></li>
+                            <li><a class="footer-collection-link" href="#">Terms And Conditions</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="footer-sections-item">
+                    <div class="footer-item socialmedia">
+                        <p class="footer-item-title">Social Media</p>
+                        <ul class="footer-collection">
+                            <li><a class="footer-collection-link" href="#">Instagram</a></li>
+                            <li><a class="footer-collection-link" href="#">TikTok</a></li>
+                            <li><a class="footer-collection-link" href="#">Twitter</a></li>
+                        </ul>
+                    </div> 
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <ul class="copyright-list">
+                <li>© 2023, WANTED</li>
+            </ul>
+        </div>
+    </footer>
 </body>
+</html>

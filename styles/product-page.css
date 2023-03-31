@@ -1,0 +1,46 @@
+:root {
+    --black: rgb(29, 29, 29);
+    --white: rgb(245, 245, 245);
+    --white-transparent: rgba(245, 245, 245, 0.8);
+    --white-transparent2: rgba(245, 245, 245, 0.9);
+    --lightGrey: rgb(219, 219, 219);
+    --lightGrey-transparent: rgba(219, 219, 219, 0.8);
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url(../fonts/RobotoMono/RobotoMono-Regular.ttf);
+}
+
+html {
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white);
+}
+
+p, h1 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+}
+
+.main-product {
+    display: flex;
+    margin-top: 80px;
+}
+
+.product-photos {
+    width: 70%;
+}
+
+.product-panel {
+    width: 30%;
+    color: black;
+    padding: 0;
+}
+
+.photo {
+    max-width: 49.8%;
+}
