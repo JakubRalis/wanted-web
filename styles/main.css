@@ -15,6 +15,11 @@
 html {
     font-family: "Oswald", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--white);
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 p, h1 {
