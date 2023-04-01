@@ -66,6 +66,7 @@ body {
     margin-right: 0.5em;
     overflow: hidden;
     transition: 200ms ease;
+    user-select: none;
 }
 
 .sizes-item:hover {
@@ -126,12 +127,20 @@ body {
 .product-sizetable {
     margin-top: 1em;
     display: block;
+    position: relative;
 }
 
 .sizetable-link {
     display: inline-block;
     font-size: 1.1rem;
-    text-decoration: underline;
+}
+
+.sizetable-link::before {
+    content: url(../media/measuring-tape-icon.svg);
+    display: inline-block;
+    padding-right: 5px;
+    width: 18px;
+    height: 18px;
 }
 
 .addtocart-btn {

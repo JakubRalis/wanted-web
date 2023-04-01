@@ -106,11 +106,11 @@ nav {
     color: black;
     padding: .5em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    background-color: var(--white-transparent);
+    background-color: var(--white);
 }
 
 .hamburger-item:hover {
-    background-color: var(--lightGrey-transparent);
+    background-color: var(--lightGrey);
 }
 
 .hamburger-item.products {
@@ -176,13 +176,6 @@ nav {
         align-items: center;
     }
 
-    .hamburger-item.products::after {
-        content: "+";
-        position: absolute;
-        right: 0.3em;
-        font-size: 1.2em;
-    }
-
     .dropdown-content {
         display: block;
         color: black;
@@ -203,7 +196,7 @@ nav {
 
     .dropdown-link {
         padding: 1em;
-        background-color: var(--white-transparent);
+        background-color: var(--white);
         border: 1px solid rgba(0, 0, 0, 0.5);
         border-top: none;
         display: block;
@@ -212,7 +205,7 @@ nav {
     }
 
     .dropdown-link:hover {
-        background-color: var(--lightGrey-transparent);
+        background-color: var(--lightGrey);
     }
 
     .dropdown-item:first-child .dropdown-link {

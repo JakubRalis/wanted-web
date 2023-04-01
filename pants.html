@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/hamburger.css">
-    <link rel="stylesheet" href="../styles/product-page.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/hamburger.css">
+    <link rel="stylesheet" href="./styles/products-page.css">
+    <link rel="stylesheet" href="./styles/unavailable.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <script src="../js/hamburger.js"></script>
-    <script src="../js/sizes.js"></script>
-    <script src="../js/navHeight.js"></script>
-    <title>Hoodie Black | WANTED</title>
+    <script src="./js/hamburger.js"></script>
+    <title>Hoodies | WANTED</title>
 </head>
 <body>
     <nav>
-        <a class="link logo-link" href="../index.html">
-            <img class="logo" src="../media/MAIN_LOGO_smallD_final.png" alt="logo">
+        <a class="link logo-link" href="./index.html">
+            <img class="logo" src="./media/MAIN_LOGO_smallD_final.png" alt="logo">
         </a>
         <div class="nav-icons">
                 <a class="link icon-link">
-                    <img class="icon cart" src="../media/cart.svg" alt="cart">
+                    <img class="icon cart" src="./media/cart.svg" alt="cart">
                     <p class="cart-indicator">0</p>
                 </a>
                 <a href="javascript:void(0)" class="link hamburger hamburger-btn hamburger-zone">
@@ -33,7 +32,7 @@
         </div>
         <ul class="hamburger-nav hamburger-zone">
             <li class="hamburger-item hoodies">
-                <a class="link" href="../hoodies.html">Hoodies</a>
+                <a class="link">Hoodies</a>
             </li>
             <li class="hamburger-item tshirts">
                 <a class="link">T-Shirts</a>
@@ -54,65 +53,20 @@
     </nav>
     <ul class="dropdown-content">
         <li class="dropdown-item hoodies">
-            <a class="link dropdown-link" href="../hoodies.html">Hoodies</a>
+            <a href="./hoodies.html" class="link dropdown-link">Hoodies</a>
         </li>
         <li class="dropdown-item tshirts">
-            <a href="../tshirts.html" class="link dropdown-link">T-Shirts</a>
+            <a href="./tshirts.html" class="link dropdown-link">T-Shirts</a>
         </li>
         <li class="dropdown-item pants">
-            <a href="../pants.html" class="link dropdown-link">Pants</a>
+            <a href="./pants.html" class="link dropdown-link">Pants</a>
         </li>
     </ul>
-    <main class="main-product">
-        <ul class="product-photos">
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
-            </li>
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
-            </li>
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
-            </li>
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
-            </li>
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_black.jpg" class="photo">
-            </li>
-        </ul>
-        <div class="product-panel">
-            <h1 class="product-title">Hoodie Black</h1>
-            <p class="product-price">$XXX.XX</p>
-            <ul class="product-sizes">
-                <li onClick="changeClassS()" id="sizeBtnS" class="sizes-item unavailable">
-                    <a class="link sizes-link">S</a>
-                </li>
-                <li onClick="changeClassM()"  id="sizeBtnM" class="sizes-item">
-                    <a class="link sizes-link">M</a>
-                </li>
-                <li onClick="changeClassL()"  id="sizeBtnL" class="sizes-item">
-                    <a class="link sizes-link">L</a>
-                </li>
-                <li onClick="changeClassXL()"  id="sizeBtnXL" class="sizes-item">
-                    <a class="link sizes-link">XL</a>
-                </li>
-                <li onClick="changeClassXXL()"  id="sizeBtnXXL" class="sizes-item unavailable">
-                    <a class="link sizes-link">XXL</a>
-                </li>
-            </ul>
-            <div class="product-sizetable">
-                <a class="link sizetable-link">Size Guide</a>
-            </div>
-            <a href="#" class="button addtocart-btn">ADD TO CART</a>
-            <ul class="product-description">
-                <li class="description-item">85% cotton, 15% polymer</li>
-                <li class="description-item">Baggy fit</li>
-                <li class="description-item">ASDASD</li>
-                <li class="description-item">FGHFGH</li>
-                <li class="description-item">JKLJKL</li>
-            </ul>
+    <main class="main-unavailable">
+        <div class="products-header">
+            <p class="products-title">PANTS</p>
         </div>
+        <h1 class="unavailable">We are sorry... Pants are not available yet<span>(╥_╥)</span></h1>
     </main>
     <footer>
         <div class="footer-subscribe">
