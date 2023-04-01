@@ -15,14 +15,13 @@
 html {
     font-family: "Oswald", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--white);
-    
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-p, h1 {
+p{
     margin: 0;
 }
 
@@ -36,14 +35,16 @@ body {
     margin-top: 84px;
 }
 
-.contacts-title{
-    font-size: 1.8rem;
-    padding: 1em 0 0 0.5em;
+.contacts-box{
+    padding: 0;
+    margin: 0;
 }
 
-.contacts-text{
-    font-size: ;
+.contacts-title{
+    font-size: 1.8rem;
+    padding: 1em 0 0 0.75em;
 }
+
 
 .contacts-box{
     list-style-type: none;
@@ -55,8 +56,12 @@ body {
 }
 
 .contacts-item{
-    padding: 1em;
+    padding: 1em 1.5em;
 }
 
+.contacts-place-img{
+    padding-top: 0.2em;
+    max-width: 80%;
+}
 
 
