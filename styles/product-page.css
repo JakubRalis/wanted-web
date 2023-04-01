@@ -33,6 +33,10 @@ body {
     width: 100%;
 }
 
+.photos-item{
+    max-width: 49%;
+}
+
 .product-panel {
     color: black;
     padding: 2em;
