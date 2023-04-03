@@ -45,8 +45,8 @@ nav {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 2;
     width: 100vw;
+    z-index: 1;
 }
 
 .nav-icons {
@@ -103,7 +103,6 @@ nav {
     margin: 0;
     padding: 0;
     text-align: center;
-    z-index: 2;
 }
 
 .hamburger-item {
@@ -196,7 +195,6 @@ nav {
         position: fixed;
         top: 84px;
         width: 100%;
-        z-index: 2;
     }
 
     .dropdown-link {
@@ -268,7 +266,6 @@ nav {
 /*Produkty------------------------------------*/
 .products-box-link {
     color: black;
-    z-index: 1;
 }
 
 .products {

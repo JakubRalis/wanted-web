@@ -98,23 +98,10 @@ body {
     transform: rotate(45deg);
 }
 
-.sizes-item.unavailable::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: gray;
-    bottom: 50%;
-    right: 0;
-    transform: rotate(-45deg);
-}
-
 .sizes-item.unavailable:hover, .sizes-item.unavailable .sizes-link {
     background-color: transparent;
     cursor: not-allowed;
 }
-
-
 
 .sizes-link {
     display: flex;

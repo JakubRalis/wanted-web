@@ -48,6 +48,9 @@
     transform-origin: top;
     transition: .1s ease-in-out;
     opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .hamburger-nav.active {
@@ -79,6 +82,7 @@
         display: none;
     }
     .hamburger-nav {
+        position: static;
         transform: scaleY(1);
         opacity: 1;
     }
