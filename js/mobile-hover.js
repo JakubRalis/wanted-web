@@ -1,9 +1,5 @@
-let productImage = document.getElementById("productImage");
+let product = document.getElementById("product");
 
-productImage.addEventListener("touchstart", function() {
-    productImage.classList.add("touched")
-}, true);
-
-productImage.addEventListener("touchend", function() {
-    productImage.classList.remove("touched")
-}, true);
+function touch() {
+    product.classList.toggle("touched")
+}
