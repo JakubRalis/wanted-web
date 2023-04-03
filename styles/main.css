@@ -274,6 +274,7 @@ nav {
     flex-wrap: wrap;
     color: black;
     width: 100%;
+    gap: 4px;
 }
 
 .products-header {
@@ -290,7 +291,6 @@ nav {
 .products-box {
     max-width: 24vw;
     display: inline-block;
-    margin: 2px;
     flex-grow: 1;
     flex-shrink: 0;
     transition: 200ms ease;
