@@ -302,11 +302,11 @@ nav {
     display: none;
 }
 
-.products-box-link:hover .front, .products-box-link:active .front, .products-box-link.touched .front{
+.products-box-link:hover .front, .products-box-link:active .front, .products-box:focus .front, .products-box-link.touched .front{
     display: none;
 }
 
-.products-box-link:hover .back, .products-box-link:active .back, .products-box-link.touched .back{
+.products-box-link:hover .back, .products-box-link:active .back, .products-box:focus .back, .products-box-link.touched .back{
     display: initial;
 }
 
