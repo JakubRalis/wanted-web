@@ -1,44 +1,16 @@
-function changeClassS() {
-    document.getElementById("sizeBtnS").classList.toggle('active')
-    document.getElementById("sizeBtnM").classList.remove('active')
-    document.getElementById("sizeBtnL").classList.remove('active')
-    document.getElementById("sizeBtnXL").classList.remove('active')
-    document.getElementById("sizeBtnXXL").classList.remove('active')
+let buttons = document.getElementsByClassName("sizes-item");
 
-}
-
-function changeClassM() {
-    document.getElementById("sizeBtnS").classList.remove('active')
-    document.getElementById("sizeBtnM").classList.toggle('active')
-    document.getElementById("sizeBtnL").classList.remove('active')
-    document.getElementById("sizeBtnXL").classList.remove('active')
-    document.getElementById("sizeBtnXXL").classList.remove('active')
-
-}
-
-function changeClassL() {
-    document.getElementById("sizeBtnS").classList.remove('active')
-    document.getElementById("sizeBtnM").classList.remove('active')
-    document.getElementById("sizeBtnL").classList.toggle('active')
-    document.getElementById("sizeBtnXL").classList.remove('active')
-    document.getElementById("sizeBtnXXL").classList.remove('active')
-
-}
-
-function changeClassXL() {
-    document.getElementById("sizeBtnS").classList.remove('active')
-    document.getElementById("sizeBtnM").classList.remove('active')
-    document.getElementById("sizeBtnL").classList.remove('active')
-    document.getElementById("sizeBtnXL").classList.toggle('active')
-    document.getElementById("sizeBtnXXL").classList.remove('active')
-
-}
-
-function changeClassXXL() {
-    document.getElementById("sizeBtnS").classList.remove('active')
-    document.getElementById("sizeBtnM").classList.remove('active')
-    document.getElementById("sizeBtnL").classList.remove('active')
-    document.getElementById("sizeBtnXL").classList.remove('active')
-    document.getElementById("sizeBtnXXL").classList.toggle('active')
-
+function active(e) {
+    console.log(e);
+    if (e.classList.contains("active")) {
+        e.classList.remove("active");
+    }
+    else {
+        for (let i = 0; i < buttons.length; i++) {
+            if (buttons[i].classList.contains("active")) {
+                buttons[i].classList.remove("active");
+            }
+        }
+        e.classList.add("active");
+    }
 }
