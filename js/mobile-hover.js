@@ -7,10 +7,5 @@ function touch(e) {
             products[i].classList.remove("touched");
         }
     }
-    if (e.classList.contains("touched")) {
-        return;
-    }
-    else {
-        e.classList.add("touched");
-    }
+    e.classList.add("touched");
 }
