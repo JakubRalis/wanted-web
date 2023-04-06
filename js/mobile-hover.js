@@ -3,7 +3,7 @@ let products = document.getElementsByClassName("products-box-link");
 function touch(e) {
     console.log(e);
     if (e.classList.contains("touched")) {
-        e.classList.remove("touched");
+        return;
     }
     else {
         for (let i = 0; i < products.length; i++) {
