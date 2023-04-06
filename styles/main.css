@@ -302,14 +302,6 @@ nav {
     display: none;
 }
 
-.products-box-link:hover .front, .products-box-link:active .front, .products-box-link.touched .front{
-    display: none;
-}
-
-.products-box-link:hover .back, .products-box-link:active .back, .products-box-link.touched .back{
-    display: initial;
-}
-
 .products-price{
     font-size: 0.8rem;
 }
@@ -458,6 +450,26 @@ input[type=submit] {
 .copyright-list{
     list-style-type: none;
     padding-left: 5%;
+}
+
+@media (pointer: fine) {
+    .products-box-link:hover .front, .products-box-link:active .front{
+        display: none;
+    }
+    
+    .products-box-link:hover .back, .products-box-link:active .back{
+        display: initial;
+    }
+}
+
+@media (pointer: coarse) {
+    .products-box-link.touched .front{
+        display: none;
+    }
+    
+    .products-box-link.touched .back{
+        display: initial;
+    }
 }
 
 /*Změna velikostí - hlavně pro dolní footer*/
