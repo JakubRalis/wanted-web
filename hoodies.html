@@ -70,72 +70,50 @@
             <ul class="filterlist">
                 <li class="filterlist-item">
                     <div class="filter">
-                        <a class="link filter-link"></a>
+                        <a id="filter" onClick="expand(this)" class="link filter-link">Color</a>
                         <ul class="filter-options">
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
+                            <li id="colorBlack" class="filter-option">
+                                <a class="link option-link">Black</a>
                             </li>
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
+                            <li id="colorGrey" class="filter-option">
+                                <a class="link option-link">Grey</a>
                             </li>
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
+                            <li id="colorWhite" class="filter-option">
+                                <a class="link option-link">White</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li class="filterlist-item">
                     <div class="filter">
-                        <a class="link filter-link"></a>
+                        <a id="filter" onClick="expand(this)" class="link filter-link">Type</a>
                         <ul class="filter-options">
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
+                            <li id="typeNormal" class="filter-option">
+                                <a class="link option-link">Normal</a>
                             </li>
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
-                            </li>
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
+                            <li id="typeZip" class="filter-option">
+                                <a class="link option-link">Zip-up</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li class="filterlist-item">
                     <div class="filter">
-                        <a class="link filter-link"></a>
+                        <a id="filter" onClick="expand(this)" class="link filter-link">Sale</a>
                         <ul class="filter-options">
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
+                            <li id="saleOnSale" class="filter-option">
+                                <a class="link option-link">On Sale</a>
                             </li>
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
-                            </li>
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="filterlist-item">
-                    <div class="filter">
-                        <a class="link filter-link"></a>
-                        <ul class="filter-options">
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
-                            </li>
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
-                            </li>
-                            <li class="filter-option">
-                                <a class="link option-link"></a>
+                            <li id="saleNoSale" class="filter-option">
+                                <a class="link option-link">Not On Sale</a>
                             </li>
                         </ul>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="products">
-            <a href="./products-html/hoodie-black.html" class="products-box-link" id="product" ontouchstart="touch(this)">
+        <div id="products" class="products">
+            <a href="./products-html/hoodie-black.html" class="products-box-link black normal nosale" id="product" ontouchstart="touch(this)">
                 <div class="products-box">
                     <img src="./products/collection1/hoodies/collection1_black.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_black_body.jpg" class="products-photo back"></img>
@@ -147,7 +125,7 @@
                     </footer>
                 </div>
             </a>
-            <a href="#" class="products-box-link" id="product" ontouchstart="touch(this)">
+            <a href="#" class="products-box-link grey normal onsale" id="product" ontouchstart="touch(this)">
                 <div class="products-box sale">
                     <img src="./products/collection1/hoodies/collection1_lightgrey.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_lightgrey_body.jpg" class="products-photo back"></img>
@@ -160,7 +138,7 @@
                     </footer>
                 </div>
             </a>
-            <a href="#" class="products-box-link" id="product" ontouchstart="touch(this)">
+            <a href="#" class="products-box-link grey normal nosale" id="product" ontouchstart="touch(this)">
                 <div class="products-box">
                     <img src="./products/collection1/hoodies/collection1_lightgrey.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_lightgrey_body.jpg" class="products-photo back"></img>
@@ -172,7 +150,7 @@
                     </footer>
                 </div>
             </a>
-            <a href="#" class="products-box-link" id="product" ontouchstart="touch(this)">
+            <a href="#" class="products-box-link white normal nosale" id="product" ontouchstart="touch(this)">
                 <div class="products-box">
                     <img src="./products/collection1/hoodies/collection1_white.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_white_body.jpg" class="products-photo back"></img>
@@ -184,7 +162,7 @@
                     </footer>
                 </div>
             </a>
-            <a href="./products-html/hoodie-black.html" class="products-box-link" id="product" ontouchstart="touch(this)">
+            <a href="./products-html/hoodie-black.html" class="products-box-link black normal nosale" id="product" ontouchstart="touch(this)">
                 <div class="products-box">
                     <img src="./products/collection1/hoodies/collection1_black.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_black_body.jpg" class="products-photo back"></img>
@@ -196,7 +174,7 @@
                     </footer>
                 </div>
             </a>
-            <a href="#" class="products-box-link" id="product" ontouchstart="touch(this)">
+            <a href="#" class="products-box-link white normal nosale" id="product" ontouchstart="touch(this)">
                 <div class="products-box">
                     <img src="./products/collection1/hoodies/collection1_white.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_white_body.jpg" class="products-photo back"></img>
@@ -208,7 +186,7 @@
                     </footer>
                 </div>
             </a>
-            <a href="#" class="products-box-link" id="product" ontouchstart="touch(this)" ontouchend="touch(this)">
+            <a href="#" class="products-box-link grey normal onsale" id="product" ontouchstart="touch(this)" ontouchend="touch(this)">
                 <div class="products-box sale">
                     <img src="./products/collection1/hoodies/collection1_lightgrey.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_lightgrey_body.jpg" class="products-photo back"></img>
@@ -221,7 +199,7 @@
                     </footer>
                 </div>
             </a>
-            <a href="#" class="products-box-link" id="product" ontouchstart="touch(this)">
+            <a href="#" class="products-box-link white normal nosale" id="product" ontouchstart="touch(this)">
                 <div class="products-box">
                     <img src="./products/collection1/hoodies/collection1_white.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_white_body.jpg" class="products-photo back"></img>
@@ -233,7 +211,7 @@
                     </footer>
                 </div>
             </a>
-            <a href="./products-html/hoodie-black.html" class="products-box-link" id="product" ontouchstart="touch(this)">
+            <a href="./products-html/hoodie-black.html" class="products-box-link black normal nosale" id="product" ontouchstart="touch(this)">
                 <div class="products-box">
                     <img src="./products/collection1/hoodies/collection1_black.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_black_body.jpg" class="products-photo back"></img>
@@ -245,7 +223,7 @@
                     </footer>
                 </div>
             </a>
-            <a href="#" class="products-box-link" id="product" ontouchstart="touch(this)">
+            <a href="#" class="products-box-link white normal nosale" id="product" ontouchstart="touch(this)">
                 <div class="products-box">
                     <img src="./products/collection1/hoodies/collection1_white.jpg" class="products-photo front"></img>
                     <img src="./products/collection1/hoodies/collection1_white_body.jpg" class="products-photo back"></img>
@@ -312,5 +290,6 @@
         </div>
     </footer>
     <script src="./js/mobile-hover.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
 </html>
