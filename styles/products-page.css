@@ -13,8 +13,7 @@
 
 .products-filter {
     width: 90%;
-    padding: 1em;
-    margin: 0 auto;
+    padding: 1em 1.5%;
     color: black;
 }
 
@@ -36,12 +35,18 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-top: 0.5em;
 }
 
 .filter-link {
     border-bottom: 1px solid black;
     font-size: 1.1rem;
     user-select: none;
+    padding: 0.5em 0.1em;
+}
+
+.filter-link span{
+    padding-left: 0.6em;
 }
 
 .option-link {
