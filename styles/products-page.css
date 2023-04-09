@@ -13,7 +13,7 @@
 
 .products-filter {
     width: 90%;
-    padding: 1em 1.5%;
+    padding: 1em 0 2.5em 1.5%;
     color: black;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .filter-link span{
-    padding-left: 0.6em;
+    padding-left: 0.65em;
 }
 
 .option-link {
