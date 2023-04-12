@@ -269,19 +269,19 @@ nav {
 }
 
 .products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: black;
-    width: 100%;
+    width: 98%;
     gap: 4px;
+    margin: 0 auto;
 }
 
 .products-header {
     color: black;
     padding-top: 2.5em;
     padding-bottom: 0.8em;
-    padding-left: 1%;
+    margin-left: 1.1%;
 }
 
 .products-title{
@@ -289,10 +289,7 @@ nav {
 }
 
 .products-box {
-    max-width: 24vw;
     display: inline-block;
-    flex-grow: 1;
-    flex-shrink: 0;
     transition: 200ms ease;
     background-color: white;
     border: 1px solid var(--lightGrey);
@@ -302,7 +299,7 @@ nav {
     display: none;
 }
 
-.products-price{
+.products-price {
     font-size: 0.8rem;
 }
 

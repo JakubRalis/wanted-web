@@ -52,6 +52,12 @@
     transform: scaleY(1);
 }
 
+.checked::before {
+    content: "X";
+    color: red;
+    position: absolute;
+}
+
 .products:has(.filtered) .products-box-link:not(.filtered) {
     display: none;
 }
