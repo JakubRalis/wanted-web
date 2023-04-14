@@ -1,0 +1,63 @@
+:root {
+    --black: rgb(29, 29, 29);
+    --white: rgb(245, 245, 245);
+    --white-transparent: rgba(245, 245, 245, 0.8);
+    --white-transparent2: rgba(245, 245, 245, 0.9);
+    --lightGrey: rgb(219, 219, 219);
+    --lightGrey-transparent: rgba(219, 219, 219, 0.8);
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+html {
+    font-family: "Oswald", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+}
+
+.main-help {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.section-header {
+    margin-bottom: 1em;
+}
+
+.section-content {
+    list-style-type: none;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+.content-link {
+    display: block;
+    border-bottom: 1px solid var(--lightGrey);
+    padding: 0.5em 0 0.5em 0;
+    user-select: none;
+}
+
+.content-description {
+    display: none;
+}
+
+.content-link.expanded + .content-description {
+    display: initial;
+}
