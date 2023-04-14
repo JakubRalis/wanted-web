@@ -40,6 +40,9 @@ body {
 .product-panel {
     color: black;
     padding: 2em;
+    position: fixed;
+    right: 0;
+    left: 70%;
 }
 
 .product-price {
@@ -74,8 +77,8 @@ body {
     font-size: 1.2rem;
     border: 1px solid black;
     border-radius: 100%;
+    margin-top: 5px;
     margin-right: 0.5em;
-    overflow: hidden;
     transition: 200ms ease;
     user-select: none;
 }
@@ -167,6 +170,9 @@ body {
 @media screen and (max-width: 960px) {
     .main-product {
         flex-direction: column;
+    }
+    .product-panel {
+        position: static;
     }
     .product-sizes {
         text-align: center;
