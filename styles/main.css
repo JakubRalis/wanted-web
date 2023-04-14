@@ -33,7 +33,7 @@ body {
 
 /*Navbar------------------------------------*/
 .link {
-    transition: 200ms ease-in-out;
+    transition: 100ms ease-in-out;
 }
 
 .link:hover {

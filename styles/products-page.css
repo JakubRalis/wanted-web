@@ -25,42 +25,67 @@
 
 .filterlist-item {
     display: inline-block;
+    position: relative;
     margin-right: 1em;
 }
 
 .filter-options {
+    width: calc(100% - 2px);
+    position: absolute;
     transform: scaleY(0);
     transform-origin: top;
-    position: absolute;
     list-style-type: none;
-    margin: 0;
+    margin: calc(0.5em + 2px) 0 0 0;
     padding: 0;
-    padding-top: 0.5em;
+    background-color: var(--white);
+    transition: 100ms ease;
+    border: 1px solid var(--lightGrey);
+    border-top: none;
+}
+
+.filter-option {
+    border-bottom: 1px solid var(--lightGrey);
+    cursor: pointer;
+}
+
+.filter-option:last-child {
+    border-bottom: none;
 }
 
 .filter-link {
     border-bottom: 1px solid black;
     font-size: 1.1rem;
     user-select: none;
-    padding: 0.5em 0.1em;
+    padding: 0.5em 0;
 }
 
-.filter-link span{
-    padding-left: 0.65em;
+.filter-link::after {
+    margin-left: 45px;
+    content: "\1F610";
+}
+
+.filter-link.expanded::after {
+    content: "\1F62E";
 }
 
 .option-link {
     user-select: none;
 }
 
-.filter-link.expanded + .filter-options {
-    transform: scaleY(1);
+.check-link {
+    margin-left: 5px;
+    border: 1px solid black;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
 }
 
-.checked::before {
-    content: "X";
-    color: red;
-    position: absolute;
+.filter-option.checked .check-link {
+    background-color: black;
+}
+
+.filter-link.expanded + .filter-options {
+    transform: scaleY(1);
 }
 
 .products:has(.filtered) .products-box-link:not(.filtered) {
