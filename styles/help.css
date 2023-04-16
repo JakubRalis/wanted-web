@@ -32,10 +32,10 @@ body {
 }
 
 .main-help {
-    margin: 120px 0 60px 100px;
+    margin: 120px 0 60px 7%;
     display: flex;
     align-items: flex-start;
-    gap: 8em;
+    gap: 7%;
 }
 
 .help-menu {
@@ -63,7 +63,7 @@ body {
 
 .section-content {
     list-style-type: none;
-    width: 40%;
+    width: 60%;
     margin: 0;
     padding: 0;
 }
@@ -87,9 +87,8 @@ body {
 }
 
 .content-arrow {
-    display: inline-block;
-    position: absolute;
-    right: 1em;
+    float: right;
+    margin-right: 1em;
     transform: rotate(90deg);
     transition: 100ms ease;
 }
