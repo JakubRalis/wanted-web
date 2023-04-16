@@ -60,7 +60,7 @@
 }
 
 .filter-link::after {
-    margin-left: 45px;
+    margin-left: 20px;
     content: "\1F610";
 }
 

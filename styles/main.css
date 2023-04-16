@@ -33,7 +33,7 @@ body {
 
 /*Navbar------------------------------------*/
 .link {
-    transition: 100ms ease-in-out;
+    transition: 100ms ease;
 }
 
 .link:hover {
@@ -426,7 +426,12 @@ input[type=submit] {
 
 .footer-collection-link{
     text-decoration: none;
-    color: var(--black);
+    color: black;
+    transition: 100ms ease;
+}
+
+.footer-collection-link:hover {
+    opacity: 0.8;
 }
 /*Copyright*/
 .copyright{
