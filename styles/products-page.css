@@ -60,12 +60,16 @@
 }
 
 .filter-link::after {
-    margin-left: 20px;
-    content: "\1F610";
+    margin-left: 1.6em;
+    margin-right: 0.5em;
+    content: ">";
+    transform: rotate(90deg);
+    display: inline-block;
+    transition: 100ms ease;
 }
 
 .filter-link.expanded::after {
-    content: "\1F62E";
+    transform: rotate(270deg);
 }
 
 .option-link {

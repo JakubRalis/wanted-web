@@ -58,7 +58,7 @@ body {
 }
 
 .section-header {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .section-content {
@@ -70,44 +70,16 @@ body {
 .content-item {
     display: block;
     border-bottom: 1px solid var(--lightGrey);
-    user-select: none;
-    position: relative;
-}
-
-.content-link {
-    display: block;
-    font-weight: bold;
-    color: rgb(71, 71, 71);
-    padding: 2em 0 1em 0;
 }
 
 .content-title {
-    display: inline-block;
-}
-
-.content-arrow {
-    float: right;
-    margin-right: 1em;
-    transform: rotate(90deg);
-    transition: 100ms ease;
+    font-size: 1.1rem;
+    color: rgb(39, 39, 39);
+    margin-bottom: 1.2em;
 }
 
 .content-description {
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 300ms ease, opacity 200ms ease;
-    transform-origin: top;
     padding-bottom: 1em;
-}
-
-.content-link.expanded + .content-description {
-    max-height: 1000px;
-    opacity: 1;
-    transition: max-height 1s ease, opacity 200ms ease;
-}
-
-.content-link.expanded .content-arrow {
-    transform: rotate(270deg);
 }
 
 @media screen and (max-width: 960px) {

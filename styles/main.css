@@ -106,7 +106,7 @@ nav {
 }
 
 .hamburger-item {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
     padding: .5em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -167,9 +167,18 @@ nav {
         justify-content: flex-end;
     }
     .logo {
-        height: 45px;
+        height: 36px;
     }
-
+    .icon {
+        height: 24px;
+    }
+    .icon-link {
+        height: 24px;
+    }
+    .cart-indicator {
+        right: 1.2em;
+        font-size: 0.64rem;
+    }
     .hamburger-item.hoodies, .hamburger-item.tshirts, .hamburger-item.pants {
         display: none;
     }
@@ -191,9 +200,8 @@ nav {
         margin: 0;
         transition: .1s .2s ease-in-out;
         transform-origin: top;
-        font-size: 20px;
         position: fixed;
-        top: 84px;
+        top: 67.38px;
         width: 100%;
         z-index: 1;
     }
@@ -293,7 +301,6 @@ nav {
     display: inline-block;
     transition: 200ms ease;
     background-color: white;
-    border: 1px solid var(--lightGrey);
 }
 
 .products-photo:last-of-type {
