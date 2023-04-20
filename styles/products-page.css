@@ -59,16 +59,21 @@
     padding: 0.5em 0;
 }
 
-.filter-link::after {
+.filter-arrow{
     margin-left: 1.6em;
     margin-right: 0.5em;
-    content: url(../media/foursquare.svg);
-    transform: rotate(90deg);
     display: inline-block;
+}
+
+.filter-arrow img{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    transform: rotate(90deg);
     transition: 100ms ease;
 }
 
-.filter-link.expanded::after {
+.filter-link.expanded .filter-arrow img {
     transform: rotate(270deg);
 }
 
