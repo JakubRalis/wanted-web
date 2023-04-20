@@ -56,25 +56,24 @@
     border-bottom: 1px solid black;
     font-size: 1.1rem;
     user-select: none;
-    padding: 0.5em 0;
+    padding: 0.3em 0;
 }
 
 .filter-arrow{
-    margin-left: 1.6em;
+    margin-left: 1.2em;
     margin-right: 0.5em;
     display: inline-block;
 }
 
 .filter-arrow img{
     display: inline-block;
-    width: 1em;
-    height: 1em;
-    transform: rotate(90deg);
+    max-width: 0.8em;
+    max-height: 0.8em;
     transition: 100ms ease;
 }
 
 .filter-link.expanded .filter-arrow img {
-    transform: rotate(270deg);
+    transform: rotate(180deg);
 }
 
 .option-link {
