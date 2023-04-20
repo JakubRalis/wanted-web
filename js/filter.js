@@ -16,6 +16,10 @@ let zips = document.getElementsByClassName("zip");
 let onsales = document.getElementsByClassName("onsale");
 let nosales = document.getElementsByClassName("nosale");
 
+let filters = document.getElementsByClassName("filter-link")
+let expandeds = document.getElementsByClassName("expanded");
+let haf = document.getElementById("haf");
+
 black.addEventListener("click", function () {
     black.classList.toggle("checked");
     for (let i = 0; i < blacks.length; i++) {
@@ -68,4 +72,14 @@ nosale.addEventListener("click", function () {
 function expand(e) {
     console.log(e);
     e.classList.toggle("expanded");
+}
+
+function unexpand(e) {
+    console.log(e);
+    for (let i = 0; i < filters.length; i++) {
+        if (filters[i].classList.contains("expanded")) {
+            filters[i].classList.remove("expanded");
+        }
+    }
+    expand(e);
 }
