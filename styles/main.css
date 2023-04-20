@@ -5,6 +5,7 @@
     --white-transparent2: rgba(245, 245, 245, 0.9);
     --lightGrey: rgb(219, 219, 219);
     --lightGrey-transparent: rgba(219, 219, 219, 0.8);
+    --dark-red: #800000;
 }
 
 @font-face {
@@ -89,7 +90,7 @@ nav {
 .cart-indicator {
     position: absolute;
     color: var(--white);
-    background-color: red;
+    background-color: var(--dark-red);
     top: -0.5em;
     right: 1em;
     font-size: 0.8rem;
@@ -320,7 +321,8 @@ nav {
 }
 
 .products-price-red {
-    color: red;
+    font-weight: bold;
+    color: var(--dark-red);
     font-size: 0.7rem;
 }
 
@@ -359,15 +361,15 @@ footer{
 
 .footer-item-subscribe-title{
     font-size: 20px;
-    color: red;
+    color: var(--dark-red);
 }
 
 input[type=text], select, textarea {
     width: 43%;
-    color: red;
+    color: var(--dark-red);
     background-color: black;
     padding: 0.4em;
-    border: 1px solid red;
+    border: 1px solid var(--dark-red);
     box-sizing: border-box;
     margin-top: 0.5em;
     margin-bottom: 0.8em;
@@ -376,10 +378,10 @@ input[type=text], select, textarea {
 
 input[type=submit] {
     background-color: black;
-    color: red;
+    color: var(--dark-red);
     padding: 0.4em 1.3em;
     border-radius: 0.3em;
-    border: 1px solid red;
+    border: 1px solid var(--dark-red);
     cursor: pointer;
     font-size: 13px;
 }
@@ -417,7 +419,7 @@ input[type=submit] {
     display: block;
     width: 140px;
     height: 1px;
-    background-color: red;
+    background-color: var(--dark-red);
     margin-top: 3px;
     margin-bottom: 4px;
     margin-left: auto;
