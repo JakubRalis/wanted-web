@@ -62,7 +62,7 @@
 .filter-link::after {
     margin-left: 1.6em;
     margin-right: 0.5em;
-    content: ">";
+    content: url(../media/foursquare.svg);
     transform: rotate(90deg);
     display: inline-block;
     transition: 100ms ease;
