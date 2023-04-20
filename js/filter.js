@@ -6,7 +6,6 @@ let white = document.getElementById("colorWhite");
 let normal = document.getElementById("typeNormal");
 let zip = document.getElementById("typeZip");
 let onsale = document.getElementById("saleOnSale");
-let nosale = document.getElementById("saleNoSale");
 
 let blacks = document.getElementsByClassName("black");
 let greys = document.getElementsByClassName("grey");
@@ -14,11 +13,6 @@ let whites = document.getElementsByClassName("white");
 let normals = document.getElementsByClassName("normal");
 let zips = document.getElementsByClassName("zip");
 let onsales = document.getElementsByClassName("onsale");
-let nosales = document.getElementsByClassName("nosale");
-
-let filters = document.getElementsByClassName("filter-link")
-let expandeds = document.getElementsByClassName("expanded");
-let haf = document.getElementById("haf");
 
 black.addEventListener("click", function () {
     black.classList.toggle("checked");
@@ -62,24 +56,32 @@ onsale.addEventListener("click", function () {
     }
 })
 
-nosale.addEventListener("click", function () {
-    nosale.classList.toggle("checked");
-    for (let i = 0; i < nosales.length; i++) {
-        nosales[i].classList.toggle("filtered");
-    }
-})
 
-function expand(e) {
-    console.log(e);
-    e.classList.toggle("expanded");
-}
-
-function unexpand(e) {
-    console.log(e);
+let body = document.getElementById("body");
+body.addEventListener("click", function(e) {
+    let filters = document.getElementsByClassName("filterlist-item")
     for (let i = 0; i < filters.length; i++) {
-        if (filters[i].classList.contains("expanded")) {
-            filters[i].classList.remove("expanded");
+        if (filters[i] == e.target) {
+            return;
+        }
+        else {
+            let inside = filters[i].getElementsByTagName("*");
+            for (let u = 0; u < inside.length; u++) {
+                if (inside[u] == e.target) {
+                    return;
+                } 
+            }
         }
     }
-    expand(e);
+    let expandeds = document.getElementsByClassName("filter-link");
+        for (let z = 0; z < expandeds.length; z++) {
+            if (expandeds[z].classList.contains("expanded")) {
+                console.log("ahoj")
+                expandeds[z].classList.remove("expanded");
+            }
+        }
+});
+
+function expand(e) {
+    e.classList.toggle("expanded");
 }
