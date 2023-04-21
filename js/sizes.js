@@ -1,4 +1,4 @@
-let buttons = document.getElementsByClassName("sizes-item");
+let buttons = document.querySelectorAll(".sizes-item");
 
 function active(e) {
     console.log(e);

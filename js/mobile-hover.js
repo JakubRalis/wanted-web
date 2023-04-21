@@ -1,4 +1,4 @@
-let productslink = document.getElementsByClassName("products-box-link");
+let productslink = document.querySelectorAll(".products-box-link");
 
 function touch(e) {
     console.log(e);

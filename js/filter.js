@@ -7,12 +7,12 @@ let normal = document.getElementById("typeNormal");
 let zip = document.getElementById("typeZip");
 let onsale = document.getElementById("saleOnSale");
 
-let blacks = document.getElementsByClassName("black");
-let greys = document.getElementsByClassName("grey");
-let whites = document.getElementsByClassName("white");
-let normals = document.getElementsByClassName("normal");
-let zips = document.getElementsByClassName("zip");
-let onsales = document.getElementsByClassName("onsale");
+let blacks = document.querySelectorAll(".black");
+let greys = document.querySelectorAll(".grey");
+let whites = document.querySelectorAll(".white");
+let normals = document.querySelectorAll(".normal");
+let zips = document.querySelectorAll(".zip");
+let onsales = document.querySelectorAll(".onsale");
 
 black.addEventListener("click", function () {
     black.classList.toggle("checked");
@@ -59,7 +59,7 @@ onsale.addEventListener("click", function () {
 
 let body = document.getElementById("body");
 body.addEventListener("click", function(e) {
-    let filters = document.getElementsByClassName("filterlist-item")
+    let filters = document.querySelectorAll(".filterlist-item")
     for (let i = 0; i < filters.length; i++) {
         if (filters[i] == e.target) {
             return;
@@ -73,7 +73,7 @@ body.addEventListener("click", function(e) {
             }
         }
     }
-    let expandeds = document.getElementsByClassName("filter-link");
+    let expandeds = document.querySelectorAll(".filter-link");
         for (let z = 0; z < expandeds.length; z++) {
             if (expandeds[z].classList.contains("expanded")) {
                 console.log("ahoj")
