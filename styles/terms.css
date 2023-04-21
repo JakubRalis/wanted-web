@@ -82,6 +82,10 @@ body {
     padding-bottom: 1em;
 }
 
+.current{
+    color: black;
+}
+
 @media screen and (max-width: 960px) {
     .main-help {
         grid-template-columns: 1fr;

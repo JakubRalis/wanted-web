@@ -110,6 +110,10 @@ body {
     transform: rotate(270deg);
 }
 
+.current{
+    color: black;
+}
+
 @media screen and (max-width: 960px) {
     .main-help {
         grid-template-columns: 1fr;
