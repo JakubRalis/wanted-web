@@ -80,6 +80,17 @@
     user-select: none;
 }
 
+.option-link.single {
+    font-size: 1.1rem;
+    border-bottom: 1px solid black;
+    padding: 0.3em 0;
+}
+
+.option-link.single.checked {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
 .check-link {
     margin-left: 5px;
     border: 1px solid black;
