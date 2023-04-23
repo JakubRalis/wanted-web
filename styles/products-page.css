@@ -5,6 +5,7 @@
     --white-transparent2: rgba(245, 245, 245, 0.9);
     --lightGrey: rgb(219, 219, 219);
     --lightGrey-transparent: rgba(219, 219, 219, 0.8);
+    --dark-red: #800000;
 }
 
 .main-products {
@@ -87,8 +88,8 @@
 }
 
 .option-link.single.checked {
-    color: red;
-    border-bottom: 1px solid red;
+    color: var(--dark-red);
+    border-bottom: 1px solid var(--dark-red);
 }
 
 .check-link {
