@@ -67,7 +67,7 @@ nav {
 }
 
 .logo:hover {
-    rotate: 3deg;
+    scale: 1.02;
 }
 
 .icon {

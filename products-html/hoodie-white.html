@@ -11,9 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../media/kriz_solo.png">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="../js/hamburger.js"></script>
     <script src="../js/sizes.js"></script>
-    <title>Hoodie Grey | WANTED</title>
+    <script src="../js/slideshow.js"></script>
+    <title>Hoodie White | WANTED</title>
 </head>
 <body>
     <nav>
@@ -64,37 +66,36 @@
         </li>
     </ul>
     <main class="main-product">
-        <ul class="product-photos">
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_white.jpg" class="photo">
-            </li>
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_white.jpg" class="photo">
-            </li>
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_white.jpg" class="photo">
-            </li>
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_white.jpg" class="photo">
-            </li>
-            <li class="photos-item">
-                <img src="../products/collection1/hoodies/collection1_white.jpg" class="photo">
-            </li>
-        </ul>
-        <div class="product-panel">
-            <h1 class="product-title">Hoodie Grey</h1>
+        <div id="slider" class="photos-box">
+            <div class="product-photos">
+                <img src="../products/collection1/hoodies/collection1_white.jpg" class="slide photo">
+                <img src="../products/collection1/hoodies/collection1_white_body.jpg" class="slide photo">
+                <img src="../products/collection1/hoodies/collection1_white.jpg" class="slide photo">
+                <img src="../products/collection1/hoodies/collection1_white_body.jpg" class="slide photo">
+                <img src="../products/collection1/hoodies/collection1_white.jpg" class="slide photo">
+            </div>
+            <div class="dots">
+                <span onclick="currentSlide(1)" class="dot"></span>
+                <span onclick="currentSlide(2)" class="dot"></span>
+                <span onclick="currentSlide(3)" class="dot"></span>
+                <span onclick="currentSlide(4)" class="dot"></span>
+                <span onclick="currentSlide(5)" class="dot"></span>
+            </div>
+        </div>
+        <div id="panel" class="product-panel">
+            <h1 class="product-title">Hoodie Black</h1>
             <p class="product-price">$XXX.XX</p>
             <ul class="product-sizes">
                 <li id="sizeBtn" class="sizes-item unavailable">
                     <a class="link sizes-link">S</a>
                 </li>
-                <li onClick="active(this)"  id="sizeBtn" class="sizes-item">
+                <li id="sizeBtn" class="sizes-item available">
                     <a class="link sizes-link">M</a>
                 </li>
-                <li onClick="active(this)"  id="sizeBtn" class="sizes-item">
+                <li id="sizeBtn" class="sizes-item available">
                     <a class="link sizes-link">L</a>
                 </li>
-                <li onClick="active(this)"  id="sizeBtn" class="sizes-item">
+                <li id="sizeBtn" class="sizes-item available">
                     <a class="link sizes-link">XL</a>
                 </li>
                 <li id="sizeBtn" class="sizes-item unavailable">
@@ -115,7 +116,7 @@
         </div>
     </main>
     <footer>
-        <div class="footer-subscribe">
+        <div id="footer" class="footer-subscribe">
             <p class="footer-item-subscribe-title">STAY IN THE KNOW</p>
             <div class="footer-formular">
                 <form action="action_page.php">
@@ -142,9 +143,9 @@
                     <div class="footer-item help">
                         <p class="footer-item-title">Can We Help U?</p>
                         <ul class="footer-collection">
-                            <li><a class="footer-collection-link" href="../help.html">Help</a></li>
+                            <li><a class="footer-collection-link" href="../help/help.html">Help</a></li>
                             <li><a class="footer-collection-link" href="#">Transport And Return</a></li>
-                            <li><a class="footer-collection-link" href="../terms.html">Terms And Conditions</a></li>
+                            <li><a class="footer-collection-link" href="../term/terms.html">Terms And Conditions</a></li>
                         </ul>
                     </div>
                 </li>
@@ -152,9 +153,9 @@
                     <div class="footer-item socialmedia">
                         <p class="footer-item-title">Social Media</p>
                         <ul class="footer-collection">
-                            <li><a class="footer-collection-link" href="../help/help.html">Help</a></li>
-                            <li><a class="footer-collection-link" href="#">Transport And Return</a></li>
-                            <li><a class="footer-collection-link" href="../term/terms.html">Terms And Conditions</a></li>
+                            <li><a class="footer-collection-link" href="#">Instagram</a></li>
+                            <li><a class="footer-collection-link" href="#">TikTok</a></li>
+                            <li><a class="footer-collection-link" href="#">Twitter</a></li>
                         </ul>
                     </div> 
                 </li>

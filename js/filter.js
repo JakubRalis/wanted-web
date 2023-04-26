@@ -1,19 +1,20 @@
-let products = document.querySelectorAll(".products-box-link")
+const products = document.querySelectorAll(".products-box-link")
+const productsBox = document.getElementById("products")
 
-let black = document.getElementById("colorBlack");
-let grey = document.getElementById("colorGrey");
-let white = document.getElementById("colorWhite");
-let normal = document.getElementById("typeNormal");
-let zip = document.getElementById("typeZip");
-let onsale = document.getElementById("saleOnSale");
+const black = document.getElementById("colorBlack");
+const grey = document.getElementById("colorGrey");
+const white = document.getElementById("colorWhite");
+const normal = document.getElementById("typeNormal");
+const zip = document.getElementById("typeZip");
+const onsale = document.getElementById("saleOnSale");
 
-let blacks = document.querySelectorAll(".black");
-let greys = document.querySelectorAll(".grey");
-let whites = document.querySelectorAll(".white");
-let normals = document.querySelectorAll(".normal");
-let zips = document.querySelectorAll(".zip");
-let onsales = document.querySelectorAll(".onsale");
-let checkeds = document.querySelectorAll(".checked")
+const blacks = document.querySelectorAll(".black");
+const greys = document.querySelectorAll(".grey");
+const whites = document.querySelectorAll(".white");
+const normals = document.querySelectorAll(".normal");
+const zips = document.querySelectorAll(".zip");
+const onsales = document.querySelectorAll(".onsale");
+const checkeds = document.querySelectorAll(".checked")
 
 
 const checkedElements = [];
@@ -192,16 +193,86 @@ function filter() {
     console.log("c: " + colorFilter)
     console.log("t: " + typeFilter)
     console.log("ce: " + checkedElements)
+    let lastAdded = checkedElements[checkedElements.length - 1]
+    let lastAddeds = document.querySelectorAll("." + lastAdded)
+    let requiredCounter = checkedElements.length - (colorFilter.length - (colorFilter.length - 1)) - (typeFilter.length - (typeFilter.length - 1))
+    console.log(requiredCounter)
+
     for (const product of products) {
-        for (const element of checkedElements) {
-            if (!product.classList.contains(element)) {
-                product.classList.remove("filtered")
-                break
+        let counter = 0
+        for (const classPart of product.classList) {
+            if (classPart != "products-box-link" && checkedElements.includes(classPart)) {
+                counter += 1
             }
+        }
+        if (counter == requiredCounter)  {
             product.classList.add("filtered")
         }
+        else {
+            product.classList.remove("filtered")
+        }
+
+
+
+
+        
+        // NENÍ ZAŠKRTNUTÝ ANI JEDEN FILTER
         if (checkedElements.length < 1) {
             product.classList.remove("filtered")
         }
+
+
+        
+        // ŽÁDNÝ PRODUKT NESPLŇUJE POŽADAVKY
+        let filtered = document.querySelectorAll(".filtered")
+        if (checkedElements.length > 0 && filtered.length < 1) {
+            productsBox.classList.add("empty")
+        }
+        if (productsBox.classList.contains("empty") && filtered.length > 0 || productsBox.classList.contains("empty") && checkedElements.length < 1) {
+            productsBox.classList.remove("empty")
+        }
     }
+    
 }
+
+    /*
+    for (const product of products) {
+        for (const element of checkedElements) {
+            if (!product.classList.contains(element)) {
+                if (colorFilter.length > 1 || typeFilter.length > 1) {
+                    for (let elm of lastAddeds) {
+                        if (elm != element) {
+                            product.classList.remove("filtered")
+                            break
+                        }
+                    }
+                    product.classList.add("filtered")
+                }
+            }
+            else {
+                product.classList.add("filtered")
+            }
+        }
+        
+
+
+
+
+        // NENÍ ZAŠKRTNUTÝ ANI JEDEN FILTER
+        if (checkedElements.length < 1) {
+            product.classList.remove("filtered")
+        }
+
+
+        
+        // ŽÁDNÝ PRODUKT NESPLŇUJE POŽADAVKY
+        let filtered = document.querySelectorAll(".filtered")
+        if (checkedElements.length > 0 && filtered.length < 1) {
+            productsBox.classList.add("empty")
+        }
+        if (productsBox.classList.contains("empty") && filtered.length > 0 || productsBox.classList.contains("empty") && checkedElements.length < 1) {
+            productsBox.classList.remove("empty")
+        }
+    }    
+}
+*/
