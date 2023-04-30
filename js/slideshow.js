@@ -21,32 +21,49 @@ document.addEventListener("DOMContentLoaded", (e) => {
       const dots = document.querySelectorAll(".dot");
 
       let slideIndex = 0;
+      const maxIndex = slides.length - 1
+      let next = slideIndex + 1
+      let previous = slideIndex - 1
+      const indexes = [slideIndex, next, previous]
+      for (let index of indexes) {
+        if (index > maxIndex) {
+          index = 0
+        }
+        else if (index < 0) {
+          index = maxIndex
+        }
+      }
+      console.log(previous)
+      console.log(slideIndex)
+      console.log(next)
+
       showSlides(slideIndex);
       
       function plusSlides(n) {
-        slideIndex += n
-        console.log(slideIndex)
-        if (slideIndex > 4) {
-          slideIndex = 0
+        for (let index of indexes) {
+          index += n
+          if (index > maxIndex) {
+            index = 0
+          }
+          else if (index < 0) {
+            index = maxIndex
+          }
         }
-        else if (slideIndex < 0) {
-          slideIndex = 4
-        }
-        console.log(slideIndex)
-        showSlides(slideIndex);
+        showSlides();
       }
       
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
+      function showSlides() {
         for (let i = 0; i < slides.length; i++) {
           if (i == slideIndex) {
             slides[slideIndex].classList.add("block");
+            slides[next].classList.add("next")
+            slides[previous].classList.add("previous")
           }
           if (slides[i].classList.contains("block") && i != slideIndex) {
             slides[i].classList.remove("block")
+          }
+          if (slides[i].classList.contains("next") && i != next) {
+            slides[i].classList.remove("next")
           }
         }
 
