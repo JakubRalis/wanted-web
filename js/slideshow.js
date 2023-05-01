@@ -23,16 +23,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
       let slideIndex = 0;
       const maxIndex = slides.length - 1
       let next = slideIndex + 1
-      let previous = slideIndex - 1
-      const indexes = [slideIndex, next, previous]
-      for (let index of indexes) {
-        if (index > maxIndex) {
-          index = 0
-        }
-        else if (index < 0) {
-          index = maxIndex
-        }
-      }
+      let previous = maxIndex
+      
       console.log(previous)
       console.log(slideIndex)
       console.log(next)
@@ -40,30 +32,46 @@ document.addEventListener("DOMContentLoaded", (e) => {
       showSlides(slideIndex);
       
       function plusSlides(n) {
-        for (let index of indexes) {
-          index += n
-          if (index > maxIndex) {
-            index = 0
-          }
-          else if (index < 0) {
-            index = maxIndex
-          }
-        }
+        slideIndex += n
+        next += n
+        previous += n
         showSlides();
       }
       
       function showSlides() {
+        if (slideIndex > maxIndex) {
+          slideIndex = 0
+        }
+        else if (slideIndex < 0) {
+          slideIndex = maxIndex
+        }
+        if (next > maxIndex) {
+          next = 0
+        }
+        else if (next < 0) {
+          next = maxIndex
+        }
+        if (previous > maxIndex) {
+          previous = 0
+        }
+        else if (previous < 0) {
+          previous = maxIndex
+        }
+
         for (let i = 0; i < slides.length; i++) {
           if (i == slideIndex) {
-            slides[slideIndex].classList.add("block");
+            slides[slideIndex].classList.add("current");
             slides[next].classList.add("next")
             slides[previous].classList.add("previous")
           }
-          if (slides[i].classList.contains("block") && i != slideIndex) {
-            slides[i].classList.remove("block")
+          if (slides[i].classList.contains("current") && i != slideIndex) {
+            slides[i].classList.remove("current")
           }
-          if (slides[i].classList.contains("next") && i != next) {
+          else if (slides[i].classList.contains("next") && i != next) {
             slides[i].classList.remove("next")
+          }
+          else if (slides[i].classList.contains("previous") && i != previous) {
+            slides[i].classList.remove("previous")
           }
         }
 
