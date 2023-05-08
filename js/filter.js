@@ -20,6 +20,7 @@ const checkeds = document.querySelectorAll(".checked")
 const checkedElements = [];
 const colorFilter = [];
 const typeFilter = [];
+const saleFilter = [];
 
 black.addEventListener("click", function () {
     black.classList.toggle("checked");
@@ -158,6 +159,16 @@ onsale.addEventListener("click", function () {
             }
         }
     }
+    if (!saleFilter.includes("onsale")) {
+        saleFilter.push("onsale")
+    }
+    else {
+        for (let i = 0; i < saleFilter.length; i++) {
+            if (saleFilter[i] == "onsale") {
+                saleFilter.splice(i, 1)
+            }
+        }
+    }
     filter();
 })
 
@@ -192,10 +203,23 @@ function expand(e) {
 function filter() {
     console.log("c: " + colorFilter)
     console.log("t: " + typeFilter)
+    console.log("s" + saleFilter)
     console.log("ce: " + checkedElements)
     let lastAdded = checkedElements[checkedElements.length - 1]
     let lastAddeds = document.querySelectorAll("." + lastAdded)
-    let requiredCounter = checkedElements.length - (colorFilter.length - (colorFilter.length - 1)) - (typeFilter.length - (typeFilter.length - 1))
+    let requiredCounter
+    if (colorFilter.length < 2 && typeFilter.length < 2) {
+        requiredCounter = checkedElements.length
+    }
+    else if (colorFilter.length > 1 && typeFilter.length < 2) {
+        requiredCounter = typeFilter.length + saleFilter.length + 1
+    }
+    else if (colorFilter.length < 2 && typeFilter.length > 1) {
+        requiredCounter = colorFilter.length + saleFilter.length + 1
+    }
+    else {
+        requiredCounter = saleFilter.length + 2
+    }
     console.log(requiredCounter)
 
     for (const product of products) {

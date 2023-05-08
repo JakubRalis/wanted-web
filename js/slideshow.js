@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
         slideIndex += n
         next += n
         previous += n
-        showSlides();
+        showSlides(n);
       }
       
-      function showSlides() {
+      function showSlides(n) {
         if (slideIndex > maxIndex) {
           slideIndex = 0
         }
@@ -59,10 +59,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
         }
 
         for (let i = 0; i < slides.length; i++) {
-          if (i == slideIndex) {
-            slides[slideIndex].classList.add("current");
-            slides[next].classList.add("next")
-            slides[previous].classList.add("previous")
+          slides[slideIndex].classList.add("current");
+          slides[next].classList.add("next")
+          slides[previous].classList.add("previous")
+          if (n < 0) {
+            slides[next].classList.add("reverse")
           }
           if (slides[i].classList.contains("current") && i != slideIndex) {
             slides[i].classList.remove("current")
