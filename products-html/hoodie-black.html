@@ -15,6 +15,36 @@
     <script src="../js/hamburger.js"></script>
     <script src="../js/sizes.js"></script>
     <script src="../js/slideshow.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          speed: 600,
+          effect: "slide", //'slide' | 'fade' | 'cube' | 'coverflow' | 'flip' | 'cards'
+          keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            bulletClass: "swiper-pagination-bullet dot",
+            bulletElement: "a",
+            clickable: false
+          },
+          breakpointsBase: "container",
+          breakpoints: {
+            1250: {
+              slidesPerView: 1,
+              spaceBetween: 0
+            }
+          }
+        });
+        document.querySelector("#next-slide").onclick = () => swiper.slideNext();
+      </script>
+    <link rel="stylesheet" href="../styles/swiper.css">  
     <title>Hoodie Black | WANTED</title>
 </head>
 <body>
@@ -66,7 +96,7 @@
         </li>
     </ul>
     <main class="main-product">
-        <div id="slider" class="photos-box">
+        <div id="slider" class="photos-box gallery">
             <div class="product-photos">
                 <img src="../products/collection1/hoodies/collection1_black.jpg" class="slide photo">
                 <img src="../products/collection1/hoodies/collection1_black.jpg" class="slide photo">
@@ -81,6 +111,29 @@
                 <span onclick="currentSlide(4)" class="dot"></span>
                 <span onclick="currentSlide(5)" class="dot"></span>
             </div>
+        </div>
+        <div class="photos-box swiper">
+            <div class="product-photos swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_black.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_black.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_black.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_black.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_black.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_black.jpg" class="slide-photo">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
         <div id="panel" class="product-panel">
             <h1 class="product-title">Hoodie Black</h1>

@@ -7,6 +7,7 @@
     --lightGrey-transparent: rgba(219, 219, 219, 0.8);
     --dark-red: #800000;
     --dark-red-transparent: #800000d8;
+    --swiper-pagination-color: black;
 }
 
 p, h1 {
@@ -18,14 +19,22 @@ body {
     background-color: var(--white);
 }
 
+nav {
+    z-index: 100;
+}
+
 .main-product {
     margin-top: 68px;
     position: relative;
 }
 
-.photos-box {
+.photos-box.gallery {
     display: inline-block;
     max-width: 70%;
+}
+
+.photos-box.swiper {
+    display: none;
 }
 
 .product-photos {
@@ -187,7 +196,7 @@ body {
         display: block;
         text-align: center;
     }
-    .photos-box {
+    .photos-box.gallery {
         max-width: 100%;
     }
 }
@@ -197,54 +206,20 @@ body {
     --SLIDESHOW--
     ------------*/
 
-    .product-photos {
+    .photos-box.gallery {
+        display: none;
+    }
+
+    .photos-box.swiper {
         display: block;
-        position: relative;
-        overflow: hidden;
+        width: 100vw;
     }
 
-    .slide {
-        transition: transform 1s;
-        position: absolute;
-        opacity: 0;
-    }
-
-    .slide.current {
-        position: static;
-        opacity: 1;
-    }
-
-    .slide.next {
-        transform: translateX(100vw);
-        opacity: 1;
-    }
-    
-    .slide.previous {
-        transform: translateX(-100vw);
-        opacity: 1;
-    }
-
-    .dots {
-        margin-left: 2em;
-        margin-top: 0.5em;
-        width: 50%;
-    }
-
-    .dot {
-        cursor: pointer;
-        height: 7px;
-        width: 7px;
-        margin: 0 2px;
-        border-radius: 50%;
-        border: 1px solid black;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
-    .dot.active, .dot:hover {
-        background-color: black;
-    }
-
-    .photos-box{
+    .slide-photo {
         width: 100%;
+    }
+
+    .swiper-pagination-bullet.dot {
+        transition: 350ms ease;
     }
 }
