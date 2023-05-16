@@ -224,8 +224,17 @@ nav {
     }
 
     .photos-box.swiper + .swiper-pagination {
-        position: absolute;
-        bottom: 0;
+        position: static;
+    }
+
+    .swiper-pagination-bullet.dot {
+        background-color: white;
+        border: 1px solid black;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active.dot {
+        background-color: black;
     }
 
     .swiper-pagination-bullet.dot {
