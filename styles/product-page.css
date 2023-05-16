@@ -219,6 +219,15 @@ nav {
         width: 100%;
     }
 
+    .photos-box.swiper {
+        position: relative;
+    }
+
+    .photos-box.swiper + .swiper-pagination {
+        position: absolute;
+        bottom: 0;
+    }
+
     .swiper-pagination-bullet.dot {
         transition: 350ms ease;
     }

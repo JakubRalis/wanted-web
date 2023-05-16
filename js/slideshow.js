@@ -1,4 +1,6 @@
+  /*  
 document.addEventListener("DOMContentLoaded", (e) => {
+
     $('#slider').on('touchstart', function(event) {
         const xClick = event.originalEvent.touches[0].pageX;
       
@@ -16,7 +18,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
           }
         });
       });
-
+      
       const slides = document.querySelectorAll(".slide");
       const dots = document.querySelectorAll(".dot");
 
@@ -75,14 +77,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
             slides[i].classList.remove("previous")
           }
         }
-
-        for (let i = 0; i < dots.length; i++) {
-          if (i == slideIndex) {
-            dots[slideIndex].classList.add("active");
-          }
-          if (dots[i].classList.contains("active") && i != slideIndex) {
-            dots[i].classList.remove("active")
-          }
-        }
-      }
-})
+      })
+        */ 
