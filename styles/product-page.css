@@ -52,7 +52,7 @@ nav {
     top: 68px;
     display: inline-block;
     color: black;
-    padding: 2em;
+    padding: 1em 2em;
     vertical-align: top;
 }
 
@@ -242,5 +242,10 @@ nav {
 
     .swiper-pagination-bullet.dot {
         transition: 350ms ease;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
     }
 }
