@@ -225,6 +225,9 @@ nav {
 
     .photos-box.swiper + .swiper-pagination {
         position: static;
+        text-align: left;
+        width: 80%;
+        margin-left: 2em;
     }
 
     .swiper-pagination-bullet.dot {
