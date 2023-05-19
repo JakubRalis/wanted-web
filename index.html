@@ -11,6 +11,22 @@
     <link rel="icon" href="./media/kriz_solo.png">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="./js/hamburger.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          speed: 600,
+          effect: "slide", //'slide' | 'fade' | 'cube' | 'coverflow' | 'flip' | 'cards'
+          spaceBetween: 0,
+          breakpointsBase: "container",
+          breakpoints: {
+            2560: {
+              slidesPerView: 1,
+            }
+          }
+        });
+      </script>
     <title>Home - CASTLE</title>
 </head>
 <body>
@@ -62,6 +78,13 @@
         </li>
     </ul>
     <main class="main-home">
+        <div class="main-photos swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide main-image main-image-first"></div>
+                <div class="swiper-slide main-image main-image-second"></div>
+                <div class="swiper-slide main-image main-image-third"></div>
+            </div>
+        </div>
         <div class="main-text">
             <h1 class="main-title">Brand new collection</h1>
             <p class="main-description">We just released new comfortable hoodies and tees with minimalistic design. Don't forget to consider ordering some for yourself!</p>

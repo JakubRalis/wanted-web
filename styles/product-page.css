@@ -37,6 +37,10 @@ nav {
     display: none;
 }
 
+.photos-box.swiper + .swiper-pagination {
+    display: none;
+}
+
 .product-photos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -224,6 +228,7 @@ nav {
     }
 
     .photos-box.swiper + .swiper-pagination {
+        display: block;
         position: static;
         text-align: left;
         width: 80%;

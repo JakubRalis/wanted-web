@@ -234,17 +234,45 @@ nav {
 /*Main------------------------------------*/
 .main-home {
     height: 100vh;
-    background-image: url(../media/skater-2560px.jpg);
-    object-fit: cover;
-    background-repeat: no-repeat;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
+.main-photos {
+    width: 100%;
+    height: 100%;
+}
+
+.main-image {
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.main-image-first {
+    background-image: url(../media/skater-2560px.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.main-image-second {
+    background-image: url(../media/skater2-2560px.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.main-image-third {
+    background-image: url(../media/skater3-2560px.jpg);
+    width: 100%;
+    height: 100%;
+}
+
 .main-text {
-    padding: 1em;
     max-width: 500px;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
 }
 
 .main-title {
@@ -513,9 +541,21 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 1245px) {
-    .main-home {
+    .main-image-first {
         background-image: url(../media/skater-1245px.jpg);
     }
+    
+    .main-image-second {
+        background-image: url(../media/skater2-1245px.jpg);
+        width: 100%;
+        height: 100%;
+}
+
+    .main-image-third {
+        background-image: url(../media/skater3-1245px.jpg);
+        width: 100%;
+        height: 100%;
+}
 
 }
 
@@ -526,9 +566,21 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 750px) {
-    .main-home {
+    .main-image-first {
         background-image: url(../media/skater-750px.jpg);
     }
+
+    .main-image-second {
+        background-image: url(../media/skater2-750px.jpg);
+        width: 100%;
+        height: 100%;
+}
+
+    .main-image-third {
+        background-image: url(../media/skater3-750px.jpg);
+        width: 100%;
+        height: 100%;
+}
 
     .products {
         grid-template-columns: 1fr 1fr;
