@@ -190,27 +190,10 @@ nav {
         align-items: center;
     }
 
-    .dropdown-content {
-        display: block;
-        color: black;
-        transform: scaleY(0);
-        opacity: 0;
-        list-style-type: none;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        transition: .1s .2s ease-in-out;
-        transform-origin: top;
-        position: fixed;
-        top: 67.38px;
-        width: 100%;
-        z-index: 1;
-    }
 
     .dropdown-link {
         padding: 1em;
-        background-color: var(--white);
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        
         border-top: none;
         display: block;
         text-decoration: none;
@@ -221,16 +204,54 @@ nav {
         background-color: var(--lightGrey);
     }
 
-    .dropdown-item:first-child .dropdown-link {
-        border-top: 1px solid rgba(0, 0, 0, 0.5);
-    }
-
     nav:has(.hamburger-item.products:hover) + .dropdown-content, .dropdown-content:hover {
         transform: scaleY(1);
         opacity: 1;
         transition-delay: 0s;
     }
 }
+/*new*/
+
+.dropdown-content {
+    padding: 0;
+    margin: 0;
+    display: block;
+    list-style-type: none;
+    position: fixed;
+    text-align: center;
+    top: 65px;
+    right: 13.5em;
+    width: 8%;
+    transition: .1s .2s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;
+    color: black;
+    z-index: 1;
+}
+
+.dropdown-button:hover + .dropdown-content, .dropdown-content:hover {
+    transform: scaleY(1);
+    transition: 100ms;
+}
+
+.dropdown-btn:has( + .dropdown-content:hover) {
+    color: var(--lightGrey);
+}
+
+.dropdown-link {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+    display: block;
+    transition: 200ms;
+    background-color: var(--white);
+    color: inherit;
+}
+
+.dropdown-link:last-child {
+    padding-bottom: 1em;
+}
+
 /*Main------------------------------------*/
 .main-home {
     height: 100vh;
