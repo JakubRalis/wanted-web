@@ -47,7 +47,7 @@ nav {
     right: 0;
     left: 0;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-icons {
@@ -109,7 +109,6 @@ nav {
 .hamburger-item {
     font-size: 1.2rem;
     color: black;
-    padding: .5em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     background-color: var(--white);
 }
@@ -126,11 +125,12 @@ nav {
     border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.hamburger-item .link {
+.hamburger-item > .link {
     display: block;
     transition: 200ms;
     color: inherit;
     text-decoration: none;
+    padding: 0.5em;
 }
 
 .dropdown-content {
@@ -144,13 +144,15 @@ nav {
     }
     .hamburger-item {
         border-bottom: none;
-        padding: 1em;
         background-color: transparent;
     }
     .hamburger-item:hover {
         background-color: transparent;
     }
-    .hamburger-item .link:not(.dropdown-link):hover {
+    .hamburger-item > .link {
+        padding: 1em;
+    }
+    .hamburger-item > .link:hover {
         opacity: 0.7;
     }
     .hamburger-item:first-child {
@@ -190,20 +192,6 @@ nav {
         align-items: center;
     }
 
-
-    .dropdown-link {
-        padding: 1em;
-        
-        border-top: none;
-        display: block;
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .dropdown-link:hover {
-        background-color: var(--lightGrey);
-    }
-
     nav:has(.hamburger-item.products:hover) + .dropdown-content, .dropdown-content:hover {
         transform: scaleY(1);
         opacity: 1;
@@ -217,39 +205,33 @@ nav {
     margin: 0;
     display: block;
     list-style-type: none;
-    position: fixed;
+    position: absolute;
     text-align: center;
-    top: 65px;
-    right: 13.5em;
-    width: 8%;
+    top: 67.38px;
     transition: .1s .2s ease-in-out;
     transform: scaleY(0);
     transform-origin: top;
     color: black;
     z-index: 1;
+    border-radius: 0 0 0.2em 0.2em;
+    background-color: var(--white);
 }
 
-.dropdown-button:hover + .dropdown-content, .dropdown-content:hover {
+.dropdown-btn:hover + .dropdown-content, .dropdown-content:hover {
     transform: scaleY(1);
     transition: 100ms;
-}
-
-.dropdown-btn:has( + .dropdown-content:hover) {
-    color: var(--lightGrey);
 }
 
 .dropdown-link {
     text-decoration: none;
     color: black;
-    padding: 0.5em;
+    padding: 0.5em 1.5em;
     display: block;
     transition: 200ms;
-    background-color: var(--white);
-    color: inherit;
 }
 
-.dropdown-link:last-child {
-    padding-bottom: 1em;
+.dropdown-link:hover {
+    color: rgba(0, 0, 0, 0.6)
 }
 
 /*Main------------------------------------*/
@@ -262,31 +244,20 @@ nav {
 }
 
 .main-photos {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+    max-width: 100vw;
 }
 
 .main-image {
     object-fit: cover;
-    background-repeat: no-repeat;
 }
 
-.main-image-first {
-    background-image: url(../media/skater-2560px.jpg);
-    width: 100%;
-    height: 100%;
+.dots .swiper-pagination-bullet {
+    transition: 300ms ease;
 }
 
-.main-image-second {
-    background-image: url(../media/skater2-2560px.jpg);
-    width: 100%;
-    height: 100%;
-}
-
-.main-image-third {
-    background-image: url(../media/skater3-2560px.jpg);
-    width: 100%;
-    height: 100%;
+.dots .swiper-pagination-bullet-active {
+    background-color: rgb(194, 194, 194);
 }
 
 .main-text {
@@ -294,6 +265,7 @@ nav {
     position: absolute;
     bottom: 1em;
     left: 1em;
+    z-index: 2;
 }
 
 .main-title {
