@@ -11,6 +11,10 @@
     font-family: "Oswald";
     src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 html {
     font-family: "Oswald", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,12 +25,7 @@ html {
     display: none;
 }
 
-p{
-    margin: 0;
-}
-
 body {
-    margin: 0;
     background-color: var(--white);
 }
 
@@ -36,7 +35,7 @@ body {
 }
 
 .contacts-box{
-    margin: 10em 1em;
+    margin: 10em 1.9em;
 }
 
 .contacts-title{
