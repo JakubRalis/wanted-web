@@ -11,6 +11,10 @@
     font-family: "Oswald";
     src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 html {
     font-family: "Oswald", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,12 +25,7 @@ html {
     display: none;
 }
 
-p{
-    margin: 0;
-}
-
 body {
-    margin: 0;
     background-color: var(--white);
 }
 
@@ -36,14 +35,11 @@ body {
 }
 
 .contacts-box{
-    padding: 0;
-    margin: 0;
-    padding-bottom: 7.5em;
+    margin: 10em 1.9em;
 }
 
 .contacts-title{
     font-size: 1.8rem;
-    padding: 1em 0 0 0.75em;
 }
 
 
@@ -56,12 +52,21 @@ body {
     text-decoration: none;
 }
 
-.contacts-item{
-    padding: 0.8em 1.5em;
+.contacts-link:hover{
+    opacity: 0.7;
 }
 
-.contacts-item:nth-child(2){
-    padding: 0.5em 0 1em 1.5em;
+.contacts-item{
+    padding-top: 0.6em;
+}
+
+.contacts-item:first-of-type{
+    padding-top: 0.4em;
+}
+
+
+.contacts-item:nth-of-type(2){
+    padding-top: 1.5em;
 }
 
 .contacts-place-img{
