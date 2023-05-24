@@ -113,10 +113,6 @@ nav {
     background-color: var(--white);
 }
 
-.hamburger-item:hover {
-    background-color: var(--lightGrey);
-}
-
 .hamburger-item.products {
     display: none;
 }
@@ -127,10 +123,14 @@ nav {
 
 .hamburger-item > .link {
     display: block;
-    transition: 200ms;
-    color: inherit;
+    transition: 100ms ease;
+    color: black;
     text-decoration: none;
     padding: 0.5em;
+}
+
+.hamburger-item > .link:hover, .hamburger-item:has(.dropdown-content:hover) .dropdown-btn {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .dropdown-content {
@@ -151,9 +151,6 @@ nav {
     }
     .hamburger-item > .link {
         padding: 1em;
-    }
-    .hamburger-item > .link:hover {
-        opacity: 0.7;
     }
     .hamburger-item:first-child {
         border-top: none;
@@ -207,7 +204,7 @@ nav {
     list-style-type: none;
     position: absolute;
     text-align: center;
-    top: 67.38px;
+    top: 67px;
     transition: .1s .2s ease-in-out;
     transform: scaleY(0);
     transform-origin: top;
@@ -219,7 +216,11 @@ nav {
 
 .dropdown-btn:hover + .dropdown-content, .dropdown-content:hover {
     transform: scaleY(1);
-    transition: 100ms;
+    transition: 100ms ease;
+}
+
+.hamburger-item:has(.dropdown-content:hover) .dropdown-btn {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .dropdown-link {
@@ -227,7 +228,7 @@ nav {
     color: black;
     padding: 0.5em 1.5em;
     display: block;
-    transition: 200ms;
+    transition: 100ms ease;
 }
 
 .dropdown-link:hover {
