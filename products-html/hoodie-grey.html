@@ -14,8 +14,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="../js/hamburger.js"></script>
     <script src="../js/sizes.js"></script>
-    <script src="../js/slideshow.js"></script>
-    <title>Hoodie Grey | WANTED</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          speed: 600,
+          effect: "slide", //'slide' | 'fade' | 'cube' | 'coverflow' | 'flip' | 'cards'
+          spaceBetween: 5,
+          keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            bulletClass: "swiper-pagination-bullet dot",
+            bulletElement: "a",
+            clickable: false
+          },
+          breakpointsBase: "container",
+          breakpoints: {
+            750: {
+              slidesPerView: 1,
+            }
+          }
+        });
+      </script>
+    <link rel="stylesheet" href="../styles/swiper.css">  
+    <title>Hoodie Grey - CASTLE</title>
 </head>
 <body>
     <nav>
@@ -45,6 +73,17 @@
             </li>
             <li class="hamburger-item products">
                 <a class="link dropdown-btn">Products +</a>
+                <ul class="dropdown-content">
+                    <li class="dropdown-item hoodies">
+                        <a class="link dropdown-link" href="../hoodies.html">Hoodies</a>
+                    </li>
+                    <li class="dropdown-item tshirts">
+                        <a href="../tshirts.html" class="link dropdown-link"><nobr>T-Shirts</nobr></a>
+                    </li>
+                    <li class="dropdown-item pants">
+                        <a href="../pants.html" class="link dropdown-link">Pants</a>
+                    </li>
+                </ul>
             </li>
             <li class="hamburger-item">
                 <a class="link" href="../about-us.html"><nobr>About Us</nobr></a>
@@ -54,34 +93,39 @@
             </li>
         </ul>
     </nav>
-    <ul class="dropdown-content">
-        <li class="dropdown-item hoodies">
-            <a class="link dropdown-link" href="../hoodies.html">Hoodies</a>
-        </li>
-        <li class="dropdown-item tshirts">
-            <a href="../tshirts.html" class="link dropdown-link">T-Shirts</a>
-        </li>
-        <li class="dropdown-item pants">
-            <a href="../pants.html" class="link dropdown-link">Pants</a>
-        </li>
-    </ul>
     <main class="main-product">
-        <div id="slider" class="photos-box">
+        <div id="slider" class="photos-box gallery">
             <div class="product-photos">
                 <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide photo">
-                <img src="../products/collection1/hoodies/collection1_lightgrey_body.jpg" class="slide photo">
                 <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide photo">
-                <img src="../products/collection1/hoodies/collection1_lightgrey_body.jpg" class="slide photo">
                 <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide photo">
-            </div>
-            <div class="dots">
-                <span onclick="currentSlide(1)" class="dot"></span>
-                <span onclick="currentSlide(2)" class="dot"></span>
-                <span onclick="currentSlide(3)" class="dot"></span>
-                <span onclick="currentSlide(4)" class="dot"></span>
-                <span onclick="currentSlide(5)" class="dot"></span>
+                <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide photo">
+                <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide photo">
             </div>
         </div>
+        <div class="photos-box swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide-photo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../products/collection1/hoodies/collection1_lightgrey.jpg" class="slide-photo">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
         <div id="panel" class="product-panel">
             <h1 class="product-title">Hoodie Black</h1>
             <p class="product-price">$XXX.XX</p>

@@ -3,7 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const first = slides[0]
     const second = slides[1]
     const third = slides[2]
+    const slider = document.querySelector(".main-home")
+    const nav = document.getElementById("navbar")
 
+    if (window.innerWidth <= 960) {
+        slider.style.height = ((window.innerHeight - 40) - nav.offsetHeight) + "px"
+    }
+    else {
+        slider.style.height = ((window.innerHeight) - nav.offsetHeight) + "px"
+    }
+    
     if (window.innerWidth <= 1245 && window.innerWidth > 750) {
         first.setAttribute("src", "./media/skater-1245px.jpg")
         second.setAttribute("src", "./media/skater2-1245px.jpg")
