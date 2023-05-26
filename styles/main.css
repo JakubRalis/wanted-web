@@ -532,24 +532,6 @@ input[type=submit] {
     }
 }
 
-@media screen and (max-width: 1245px) {
-    .main-image-first {
-        background-image: url(../media/skater-1245px.jpg);
-    }
-    
-    .main-image-second {
-        background-image: url(../media/skater2-1245px.jpg);
-        width: 100%;
-        height: 100%;
-}
-
-    .main-image-third {
-        background-image: url(../media/skater3-1245px.jpg);
-        width: 100%;
-        height: 100%;
-}
-
-}
 
 @media screen and (max-width: 960px) {
     .products {
@@ -558,21 +540,6 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 750px) {
-    .main-image-first {
-        background-image: url(../media/skater-750px.jpg);
-    }
-
-    .main-image-second {
-        background-image: url(../media/skater2-750px.jpg);
-        width: 100%;
-        height: 100%;
-}
-
-    .main-image-third {
-        background-image: url(../media/skater3-750px.jpg);
-        width: 100%;
-        height: 100%;
-}
 
     .products {
         grid-template-columns: 1fr 1fr;
